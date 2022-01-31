@@ -1,0 +1,27 @@
+.category-list {
+  margin-bottom: 3.865vw;
+  margin-left: 7.246vw;
+  margin-right: 7.246vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3.623vw;
+  line-height: 3.382vw;
+  .category-item {
+    height: 100%;
+    padding: 2.415vw;
+    margin-left: 4.831vw;
+    margin-right: 4.831vw;
+
+    &.selected_category {
+      background: #04565a;
+      color: white;
+      border-radius: 15px;
+    }
+  }
+}
+:global(.noslider .category-list) {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}

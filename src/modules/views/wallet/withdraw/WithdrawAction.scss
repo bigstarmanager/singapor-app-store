@@ -1,0 +1,151 @@
+@import '@/styles/variables';
+
+.content {
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.back-btn {
+  color: #04565a;
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+}
+
+.back-icon {
+  font-size: 30px;
+  color: #04565a;
+  margin-left: -16px;
+}
+
+ion-button.confirm-btn {
+  font-size: 16px;
+  text-transform: none;
+  height: 48px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  --background: #{$login-button-color};
+  --box-shadow: 0;
+}
+
+ion-button.confirm-btn[disabled] {
+  font-size: 16px;
+  text-transform: none;
+  height: 48px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  --background: #f4f6f8;
+  --color: #a2acb5;
+  --box-shadow: 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.title-fail {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fa3434;
+  text-align: center;
+}
+
+.status-text {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.text-black {
+  font-size: 14px;
+  color: black;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.text-grey {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 7vh;
+}
+
+ion-item.voucher-container {
+  --min-height: 46px;
+  --highlight-height: 0;
+  border-radius: 4px;
+  border: 1px solid #e4e5e6;
+
+  &.error {
+    border: solid 1px #cb3c3c;
+  }
+
+  ion-input {
+    --height: 48px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+ion-item.input-error {
+  --min-height: 46px;
+  --highlight-height: 0;
+  border-radius: 4px;
+  border: 1px solid #cb3c3c;
+  ion-input {
+    --height: 48px;
+    font-size: 20px;
+    text-align: center;
+    color: #888888;
+  }
+}
+
+div.error {
+  margin-top: 16px;
+  color: #cb3c3c;
+  font-size: 16px;
+}
+
+.lottie-vue-sucess {
+  margin-top: 4vh;
+}
+
+.lottie-vue-fail {
+  margin-top: 16vh;
+  margin-bottom: 8vh;
+}
+
+.withdraw-status {
+  text-align: center;
+  padding: 16px;
+}
+
+.status-btn {
+  text-transform: none;
+  height: 48px;
+  border-radius: 4px;
+  bottom: 0;
+  margin: 16px;
+}
+
+.title-toolbar {
+  font-size: 16px;
+  color: #000000;
+}
+
+.grey-currency {
+  font-size: 20px;
+  color: #888888;
+}
+
+.black-currency {
+  font-size: 20px;
+  color: #000000;
+}

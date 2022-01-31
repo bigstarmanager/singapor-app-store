@@ -1,0 +1,20 @@
+#home-container .logo-container {
+  height: 173px;
+}
+
+.home-btn {
+  margin-bottom: 16px;
+}
+
+ion-header {
+  ion-toolbar {
+    --border-style: none;
+  }
+}
+
+ion-header.sticky {
+  ion-toolbar {
+    --border-style: solid;
+    --background: #fff;
+  }
+}

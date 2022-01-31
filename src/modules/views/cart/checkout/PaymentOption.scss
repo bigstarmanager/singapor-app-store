@@ -1,0 +1,42 @@
+.add-card {
+  ion-skeleton-text.img,
+  ion-img {
+    margin: 0 6px 0 0;
+    margin-left: 10px;
+  }
+}
+
+.grab-fpx {
+  width: 45px;
+  height: 28px;
+  margin: 0 6px 0 0;
+}
+
+.tick {
+  width: 18px;
+  height: 16px;
+}
+
+.grab-fpx-label {
+  margin-left: 10px;
+}
+
+.treedots {
+  ion-skeleton-text.img,
+  ion-img {
+    margin: 0 6px 0 0;
+    margin-left: 10px;
+  }
+  .amount {
+    span {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+    }
+    ion-img {
+      width: 18px;
+      height: 16px;
+      margin: 0 6px;
+    }
+  }
+}

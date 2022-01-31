@@ -1,0 +1,41 @@
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2.415vw;
+  margin-bottom: 4.831vw;
+
+  .icon {
+    width: 10.628vw;
+    height: 10.628vw;
+    background-color: #04565a;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    position: relative;
+
+    ion-img,
+    ion-skeleton-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    ion-skeleton-text {
+      height: -webkit-fill-available;
+      top: 40%;
+    }
+  }
+
+  .title {
+    font-family: 'Roboto';
+    font-size: 3.623vw;
+    line-height: 5.797vw;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.selected_category {
+  .icon {
+    background: #2aaeb5;
+  }
+}

@@ -1,0 +1,281 @@
+div {
+  div.pooling {
+    display: table;
+    line-height: 0;
+    background-color: $cart-button-color;
+    // ion-item --padding-start + checkbox size + margin-left of product.
+    margin-left: calc(16px + 20px + 20px);
+    // margin-bottom of product + 8px.
+    margin-top: calc(-30px + 8px);
+    margin-bottom: 12px;
+
+    padding: 6px;
+    height: 23px;
+
+    &.edit {
+      margin-left: calc(-#{$delete-btn-width}/ 2);
+      --inner-padding-end: 0;
+    }
+
+    &.out-of-stock {
+      opacity: 0.5;
+    }
+
+    ion-img {
+      display: inline-block;
+      width: 13px;
+      height: 11px;
+    }
+
+    span {
+      margin-left: 3px;
+      line-height: 10px;
+      font-size: 12px;
+      color: white;
+      vertical-align: top;
+    }
+
+    @media screen and (min-width: 700px) {
+      span {
+        font-size: 1em;
+      }
+    }
+  }
+
+  ion-item.product {
+    margin-bottom: 30px;
+
+    &.edit {
+      margin-left: calc(-#{$delete-btn-width}/ 2);
+      --inner-padding-end: 0;
+    }
+
+    &.out-of-stock {
+      ion-checkbox {
+        opacity: 0.5;
+      }
+
+      ion-img {
+        opacity: 0.5;
+      }
+
+      .description {
+        .name {
+          opacity: 0.5;
+        }
+
+        .specification {
+          opacity: 0.5f;
+        }
+
+        .discounted-price {
+          opacity: 0.5;
+        }
+
+        .price {
+          opacity: 0.5;
+        }
+
+        ion-text {
+          color: #707070;
+        }
+      }
+    }
+
+    ion-skeleton-text.checkbox,
+    ion-checkbox {
+      margin: 0;
+    }
+
+    ion-skeleton-text.checkbox ~ ion-grid.product,
+    ion-checkbox ~ ion-grid.product {
+      margin-left: 20px;
+    }
+
+    &.has-specification {
+      ion-checkbox {
+        align-self: flex-start;
+      }
+
+      ion-grid.product {
+        height: unset;
+      }
+    }
+
+    ion-grid.product {
+      height: 102px;
+      // Checkbox size + margin size
+      width: calc(100% - 20px - 20px);
+      padding: 0;
+
+      ion-row {
+        > ion-img,
+        ion-skeleton-text.img {
+          height: 102px;
+          width: 102px;
+          border-radius: 2px;
+          --border-radius: 2px;
+
+          &::part(image) {
+            width: 102px;
+          }
+        }
+      }
+
+      .delete-btn-container {
+        .delete-btn {
+          height: 100%;
+          margin-right: 10px;
+          width: $delete-btn-width;
+          --background: #{$cart-button-color};
+          text-transform: none;
+        }
+      }
+
+      .description {
+        color: #000000;
+        margin-left: 10px;
+        width: 100%;
+
+        .name {
+          // white-space: nowrap;
+          max-height: 1.2em;
+          margin-right: 32px;
+          overflow: hidden;
+          display: inline-block;
+          margin-bottom: 7px;
+        }
+
+        > ion-img {
+          height: 20px;
+          width: 20px;
+          position: absolute;
+          top: 0;
+          right: 16px;
+        }
+
+        .price {
+          text-decoration: line-through;
+          font-size: 14px;
+          color: #707070;
+          line-height: 12px;
+
+          ion-skeleton-text {
+            // Follows line height
+            height: 12px;
+          }
+        }
+
+        @media screen and (min-width: 700px) {
+          .name {
+            font-size: 1.25em;
+          }
+          .price {
+            font-size: 1.1em;
+          }
+        }
+
+        div.specification {
+          margin-bottom: 24px;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .discounted-price {
+          font-weight: bold;
+          color: #04565a;
+          margin-bottom: 13px;
+          line-height: 12px;
+
+          ion-skeleton-text {
+            // Follows line height
+            height: 12px;
+          }
+        }
+        @media screen and (min-width: 700px) {
+          .discounted-price {
+            font-size: 1.25em;
+          }
+        }
+
+        ion-row.quantity-container {
+          position: absolute;
+          bottom: 0;
+          right: 16px;
+
+          &.edit-open {
+            right: calc(32px + #{$delete-btn-width});
+          }
+
+          ion-item.quantity {
+            height: 30px;
+            width: 102px;
+            align-items: initial;
+            text-align: center;
+            --padding-start: 0;
+            --inner-padding-end: 0;
+
+            ion-button:first-of-type span {
+              font-size: 30px;
+            }
+
+            ion-button {
+              color: white;
+              --background: #{$cart-button-color};
+              width: 30px;
+              height: 30px;
+              margin: 0;
+
+              span {
+                margin: 0;
+              }
+
+              &[disabled] {
+                // --border-style: solid;
+                // --border-color: #{$cart-button-color};
+                --background: #f4f6f8;
+                color: #a2acb5;
+                opacity: 1;
+              }
+            }
+
+            ion-button:first-child {
+              --border-radius: #{$quantity-btn-radius} 0 0 #{$quantity-btn-radius};
+            }
+
+            ion-button:last-child {
+              --border-radius: 0 #{$quantity-btn-radius} #{$quantity-btn-radius} 0;
+            }
+
+            ion-input {
+              height: 30px;
+              width: 42px;
+              border: solid 2px #{$cart-button-color};
+
+              &.loading,
+              &.no-quantity {
+                border-color: #f4f6f8;
+              }
+
+              &.no-quantity {
+                color: #cb3c3c;
+              }
+
+              &[aria-disabled] {
+                opacity: 1;
+                // border-color: #f4f6f8;
+
+                // Doesn't work because the input isn't scoped..
+                input:disabled {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

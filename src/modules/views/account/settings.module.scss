@@ -1,0 +1,47 @@
+ion-toolbar {
+  --padding-start: 0;
+}
+ion-back-button {
+  padding-right: 3.865vw;
+  padding-left: 3.865vw;
+  color: #04565a;
+  &::part(native) {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    --padding-start: 0;
+  }
+}
+ion-content {
+  --background: #f4f6f8;
+}
+.button-container {
+  margin-top: 3px;
+}
+.button-text {
+  color: #66716c;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 14px;
+}
+.page-title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 4.348vw;
+  line-height: 3.865vw;
+}
+.download-icon {
+  color: #66716c;
+}
+
+:global(.delete-account-modal) {
+  --height: 17.3rem;
+  --width: 100%;
+  padding: 16px;
+}
+:global(.delete-account-modal .modal-wrapper) {
+  min-height: 35rem;
+}
+:global(.delete-account-modal > div) {
+  --border-radius: 8px;
+}

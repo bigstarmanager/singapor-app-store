@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="app_name">TreeDots Group Buy - Community shopping</string>
+  <string name="title_activity_main">TreeDots Group Buy</string>
+  <string name="package_name">com.thetreedots.social</string>
+  <string name="custom_url_scheme">com.thetreedots.social</string>
+  <string name="ionic_app_id">e75eb9d6</string>
+  <string name="ionic_channel_name">Production</string>
+  <string name="ionic_update_method">none</string>
+  <string name="ionic_max_versions">2</string>
+  <string name="ionic_min_background_duration">30</string>
+  <string name="ionic_update_api">https://api.ionicjs.com</string>
+
+  <!--  Branch.io -->
+  <string name="applink_host">treedots.app.link</string>
+  <string name="applink_host_alternate">treedots-alternate.app.link</string>
+  <string name="deeplink_scheme">treedots-group-buy</string>
+  <string name="branch_key">key_live_nh4al8zraBBSEwTHZ6uuumcnyxaz93ZZ</string>
+  <string name="branch_test_key">key_test_paWch8twawzJAANM6WFvEgcgCBgt516G</string>
+  <bool name="branch_test_mode">false</bool>
+</resources>

@@ -1,0 +1,131 @@
+.attachment-container {
+  --background: #010219;
+
+  .images-slider {
+    height: 75vh;
+    background-color: #010219;
+    margin-top: 10px;
+  }
+  .attachment-text-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #attachment-caption {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  #attachment-thumbnail {
+    --background: #010219;
+    --border-style: none;
+  }
+  .send-container {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: var(--ion-safe-area-bottom);
+    .mentioned-users-container {
+      z-index: 100;
+      padding: 5px;
+    }
+    .mentioned-user-item {
+      display: flex;
+      padding: 2px;
+    }
+  }
+  .send-message-container {
+    display: flex;
+    --border-style: none;
+    #send-icon {
+      color: #04565a;
+    }
+  }
+  .message-attachment-input {
+    align-self: center;
+    border-radius: 30px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #f8f8f8;
+    margin-top: 0px;
+  }
+
+  .image-thumbnail {
+    margin-left: 1px;
+    margin-right: 1px;
+    position: relative;
+    margin-bottom: 0px;
+  }
+  .pdf-canvas-container {
+    opacity: 1;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .pdf-active-border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #64ae0f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .pdf-inactive-border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #010219;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .image-active {
+    opacity: 1;
+    border-color: #64ae0f;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .image-inactive {
+    opacity: 0.6;
+    border-style: solid;
+    border-width: 2px;
+  }
+}
+
+.attachment-header {
+  #header-toolbar {
+    --background: #010219;
+    color: white;
+    ion-back-button {
+      color: white;
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+    .title-container {
+      padding-left: 8px;
+      padding-right: 0px;
+    }
+  }
+  #header-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #header-date {
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+:global(.toastMessage) {
+  --background: rgba(102, 113, 124, 0.9);
+}

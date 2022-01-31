@@ -1,0 +1,36 @@
+img {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+}
+
+div.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  p.payment-failed {
+    font-size: 26px;
+    color: #fa3434;
+  }
+}
+
+ion-footer {
+  height: 120px;
+
+  // https://treedots.atlassian.net/browse/TREE-2386
+  &:before {
+    background-image: none;
+  }
+
+  ion-button.checkout-btn {
+    margin-top: 0;
+  }
+}

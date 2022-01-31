@@ -1,0 +1,37 @@
+ion-item {
+  ion-img {
+    width: 32px;
+  }
+
+  ion-img.chevron {
+    height: 15px;
+
+    &.open {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+ion-list {
+  ion-list {
+    margin-top: 0 !important;
+
+    ion-item {
+      padding: 6px 0;
+    }
+
+    ion-button {
+      margin-top: 18px;
+      height: 48px;
+
+      ion-img {
+        height: 18px;
+        width: 18px;
+
+        ~ ion-label {
+          margin: 0 0 0 11px;
+        }
+      }
+    }
+  }
+}

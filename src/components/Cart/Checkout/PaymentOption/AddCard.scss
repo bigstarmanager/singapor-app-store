@@ -1,0 +1,105 @@
+form {
+  // height: 160px;
+
+  ion-grid {
+    height: 100%;
+  }
+
+  ion-label {
+    --color: rgba(136, 136, 136, 0.5) !important;
+    font-size: 14px !important;
+  }
+
+  input {
+    display: none;
+  }
+
+  ion-input {
+    font-size: 14px;
+  }
+
+  ion-input.card {
+    background: url('/assets/images/generic.svg') no-repeat right center;
+    background-size: 24px !important;
+
+    &.visa {
+      background: url('/assets/images/cib-cc-visa.svg') no-repeat right center;
+    }
+
+    &.mastercard {
+      background: url('/assets/images/mastercard.svg') no-repeat right center;
+    }
+  }
+
+  ion-button.checkout-btn {
+    text-transform: none;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    --background: #{$cart-button-color};
+  }
+}
+
+div.header {
+  ion-item {
+    --min-height: 0px;
+    margin-top: 6px;
+
+    &:first-of-type {
+      --inner-padding-top: 12px;
+    }
+
+    ion-label {
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
+
+img {
+  width: 24px;
+}
+
+div.information,
+ion-item.information {
+  height: 48px;
+  background-color: transparent;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 14px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 14px;
+
+  > ion-label {
+    font-size: 14px;
+    margin-right: 4px;
+    color: #888888;
+  }
+
+  img {
+    vertical-align: top;
+  }
+}
+
+.error {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  margin-left: 3px;
+  color: #cb3c3c;
+}
+
+.margin-x {
+  margin-left: 8px;
+  margin-right: 8px;
+}

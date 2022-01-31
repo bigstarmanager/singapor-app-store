@@ -1,0 +1,62 @@
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.header {
+  background: #04565a;
+  color: white;
+  font-family: 'Roboto';
+}
+
+.appbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.backBtn {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 24px;
+}
+
+.margin-y {
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+.titleTerms {
+  margin-left: 1px;
+}
+
+.text-item {
+  font-size: 14px;
+  color: #888888;
+}
+
+.text-item-black {
+  font-size: 14px;
+  color: #000000;
+  text-transform: none;
+}
+
+.column-left {
+  text-align: left;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.space {
+  width: 100%;
+  height: 8px;
+  background: #f4f6f8;
+}
+
+.space-2 {
+  width: 100%;
+  height: 2px;
+  background: #f4f6f8;
+}
+
+.space-bottom {
+  margin-bottom: 5vh;
+}

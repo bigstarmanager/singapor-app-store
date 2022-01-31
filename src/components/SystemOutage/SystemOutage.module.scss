@@ -1,0 +1,24 @@
+.system-outage-page {
+  div {
+    height: min-content;
+    margin: auto;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    ion-text {
+      font-family: var(--ion-font-family);
+      text-align: center;
+      h6 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14px;
+        color: #66717c;
+      }
+    }
+  }
+}

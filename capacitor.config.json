@@ -1,0 +1,28 @@
+{
+  "appId": "com.thetreedots.social",
+  "appName": "TreeDots Group Buy - Community shopping",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false,
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "splashFullScreen": false,
+      "splashImmersive": false
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_app_notification",
+      "sound": "default"
+    },
+    "Intercom": {
+      "androidApiKey": "android_sdk-51eb55eca5da0e23afa437b404bb211487ea2b67",
+      "androidAppId": "m0p0cjkm",
+      "iosApiKey": "ios_sdk-aa13c2dcef71deb3355a701b0daff590426c30c6",
+      "iosAppId": "m0p0cjkm"
+    }
+  }
+}

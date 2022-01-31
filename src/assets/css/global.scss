@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  font-size: 14px;
+  line-height: 16px;
+}
+ion-content {
+  --margin-left: 40px;
+  --margin-right: 40px;
+}
+ion-button {
+  --border-radius: 4px;
+}
+.bar-header:after {
+  background-image: none !important;
+  border-width: 0 !important;
+  border-bottom: none !important;
+}
+
+.content {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: #5ea923;
+}
+// ion-modal{
+//   &.select-company {
+//     --width: 85%;
+//     --height: 38%;
+//     .sc-ion-modal-ios {
+//       border-radius: 8px;
+//     }
+//   };
+//   &.connect-vender {
+//     padding: 5rem 1.2rem;
+//     height: 100%;
+
+//     .modal-wrapper {
+//       &.sc-ion-modal-ios {
+//         border-radius: 12px;
+//       }
+//     }
+//   }
+// }
+.relative-position {
+  position: relative;
+}
+ion-toast.cancel_toast::part(container) {
+  font-size: 18px;
+  line-height: 16px;
+}
+ion-toast.cancel_toast {
+  --background: rgba(102, 113, 124, 0.9);
+  --border-radius: 6px;
+  --color: #ffffff;
+}
+
+ion-content.popover::part(scroll) {
+  background: #444444;
+  color: white;
+  overflow: hidden;
+}
+.refundReview-info .popover-arrow {
+  --background: #444444;
+}

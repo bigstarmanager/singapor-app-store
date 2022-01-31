@@ -1,0 +1,82 @@
+.manageBtn {
+  background: #04565a;
+  text-transform: none;
+  border-radius: 4px;
+  height: 42px;
+  color: #ffffff;
+}
+
+.modal-page {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  height: 264px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.removeBtn {
+  background: #ffffff;
+  text-transform: none;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 42px;
+  color: #04565a;
+}
+
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.padding-y {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.title-modal {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.close-icon {
+  color: #888888;
+  font-size: 22px;
+  text-align: right;
+}
+
+.ion-image {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.cc_type_number {
+  margin-right: 10px;
+  color: #888888;
+  font-size: 14px;
+}
+
+.set_default {
+  font-size: 14px;
+  color: #000000;
+}
+
+.card-label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.toogle {
+  background: #888888;
+  --background-checked: #4ed164;
+}
+
+:global(.remove-card-confirm .alert-wrapper) {
+  background: white;
+  font-size: 14px;
+  color: #000000;
+  width: 90vw;
+  min-width: 90vw;
+}

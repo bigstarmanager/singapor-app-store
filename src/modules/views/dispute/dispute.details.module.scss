@@ -1,0 +1,343 @@
+ion-toolbar {
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+  .view-history-title {
+    padding-left: 2vw;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+ion-content {
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  font-family: 'Roboto';
+
+  .alert-message-container {
+    background-color: rgba(203, 60, 60, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  .alert-message-text {
+    color: #cb3c3c;
+    font-size: 14px;
+  }
+  .history-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .history-margin {
+    margin-top: 12px;
+  }
+  .resolution-container {
+    margin-bottom: 16px;
+  }
+  .resolution-left-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .resolution-right-text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+  }
+  .datetime-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .dispute-container {
+    margin-bottom: 16px;
+    padding: 14px;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #e1e4e6;
+    border-width: 1px;
+  }
+  .cancelled-notice-container {
+    margin-bottom: 10px;
+  }
+  .cancelled-notice {
+    background-color: rgba(203, 60, 60, 0.3);
+    color: #cb3c3c;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .dispute-title-section {
+    justify-content: space-between;
+  }
+  .dispute-title-container {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dispute-title1 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .dispute-title2 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    flex: 1;
+    margin-left: 10px;
+    text-align: right;
+  }
+
+  .dispute-section1 {
+    margin-top: 10px;
+    padding-bottom: 6px;
+
+    .dispute-id-text {
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+    .dispute-id-container {
+      align-items: center;
+    }
+    .dispute-id-number {
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500;
+      margin-right: 5px;
+    }
+
+    .dispute-second-part {
+      margin-top: 5px;
+    }
+    .dispute-date-text {
+      font-family: 'Roboto';
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+  }
+  .dispute-product {
+    margin-top: 10px;
+    background-color: #edf0f4;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+
+    .product-image {
+      height: 70px;
+    }
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 10px;
+      flex: 1;
+    }
+    .product-title {
+      font-family: 'Roboto';
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    .product-quantity {
+      color: #888888;
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+    .product-price {
+      color: #04565a;
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+  }
+  .dispute-history {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #e1e4e6;
+    border-width: 1px;
+
+    .history-item-container {
+      display: flex;
+      padding-bottom: 10px;
+      min-height: 60px;
+    }
+    .history-content-container {
+      margin-left: 10px;
+    }
+    .history-dots {
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: #04565a;
+    }
+    .history-line {
+      border-left: 2px solid #64ae0f;
+      margin-left: 5px;
+      height: 100%;
+    }
+    .history-line.last {
+      height: 0px;
+    }
+
+    .history-description {
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+    .history-date {
+      color: #888888;
+      font-family: 'Roboto';
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      margin-top: 5px;
+    }
+    .view-detail-container {
+      margin-top: 10px;
+    }
+    .history-view-detail {
+      color: #04565a;
+      font-size: 14px;
+      font-family: 'Roboto';
+      line-height: 16px;
+      margin-right: 10px;
+    }
+  }
+  .dispute-history-list {
+    margin-top: 3px;
+  }
+
+  .dispute-detail-description {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #e1e4e6;
+    padding-bottom: 10px;
+  }
+  .dispute-detail-attach-description {
+    color: #888888;
+  }
+  .dispute-detail-attach-image {
+    height: 80px;
+  }
+
+  .category-button-deselect {
+    padding: 8px 10px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #c4c4c4;
+    margin-right: 10px;
+    font-family: 'Roboto';
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .category-button-selected {
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #04565a;
+    color: white;
+    font-family: 'Roboto';
+    line-height: 16px;
+    font-size: 14px;
+  }
+}
+
+ion-footer {
+  padding: 16px;
+  .resolve-description-text {
+    color: #707070;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .appeal-to-treedots-button {
+    --border-color: red;
+    --color: red;
+  }
+}
+
+:global(.cancel-issue-confirm .alert-wrapper) {
+  background: white;
+  font-size: 14px;
+  color: #888888;
+  width: 80vw;
+  min-width: 80vw;
+
+  .alert-button {
+    color: red;
+  }
+}
+
+:global(.alert-message-container) {
+  display: flex;
+  background-color: rgba(203, 60, 60, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+}
+:global(.exclamation-mark) {
+  width: 24px;
+  height: 24px;
+}
+:global(.alert-message-text) {
+  flex: 1;
+  color: #cb3c3c;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+:global(.view-detail-modal) {
+  --height: 50vh;
+  --width: 100%;
+}
+:global(.view-detail-modal > div) {
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  bottom: 0%;
+  left: 0;
+  --border-radius: 12px 12px 0 0;
+}
+
+:global(.appeal-treedots-modal) {
+  --height: 90vh;
+  --width: 100%;
+}
+:global(.appeal-treedots-modal > div) {
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  bottom: 0%;
+  left: 0;
+  --border-radius: 12px 12px 0 0;
+}
+
+:global(.dispute-toast-message) {
+  --background: rgba(102, 113, 124, 0.9);
+  --color: white;
+}

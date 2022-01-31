@@ -1,0 +1,48 @@
+ion-grid {
+  padding: 8px 20px 24px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.modalHeader {
+  justify-content: end;
+  img {
+    margin: 6px;
+  }
+}
+.refundTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.refundDescription {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+.refundInfo {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 5px 0;
+  justify-content: space-between;
+
+  .infoTitle {
+    display: flex;
+    position: relative;
+  }
+  .amount {
+    justify-content: end;
+  }
+  ion-img {
+    width: 24px;
+  }
+}
+:global(.refundReview-info .popover-content) {
+  border-radius: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  --background: #444444;
+  width: 94%;
+}

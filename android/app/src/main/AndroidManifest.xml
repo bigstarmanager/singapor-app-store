@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thetreedots.social">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Recommended so that we can be smart about when to send the data -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Geolocation API -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".CustomApplicationClass"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:requestLegacyExternalStorage="true"
+    >
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- BEGIN BRANCH -->
+            <intent-filter android:autoVerify="true">
+                 <action android:name="android.intent.action.VIEW" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <category android:name="android.intent.category.BROWSABLE" />
+                 <data android:scheme="http" android:host="@string/applink_host" />
+                 <data android:scheme="https" android:host="@string/applink_host" />
+                 <data android:scheme="http" android:host="@string/applink_host_alternate" />
+                 <data android:scheme="https" android:host="@string/applink_host_alternate" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/deeplink_scheme"/>
+            </intent-filter>
+            <!-- END BRANCH -->
+
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+          <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- BEGIN BRANCH -->
+        <!-- Branch init -->
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="@string/branch_key" />
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="@string/branch_test_key" />
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="@bool/branch_test_mode" />
+        <!-- END BRANCH -->
+
+        <meta-data
+          android:name="com.google.firebase.messaging.default_notification_icon"
+          android:resource="@drawable/ic_app_notification" />
+
+    <receiver
+        android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"
+        android:exported="false"
+        android:enabled="true">
+    </receiver>
+
+    <service
+        android:name="com.clevertap.android.sdk.pushnotification.CTNotificationIntentService"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="com.clevertap.PUSH_EVENT"/>
+        </intent-filter>
+    </service>
+
+    <meta-data
+        android:name="CLEVERTAP_NOTIFICATION_ICON"
+        android:resource="@drawable/ic_app_notification" />
+
+    <!-- IMPORTANT: To force use Google AD ID to uniquely identify  users, use the following meta tag. GDPR mandates that if you are using this tag, there is prominent disclousure to your end customer in their application. Read more about GDPR here - https://clevertap.com/blog/in-preparation-of-gdpr-compliance/ -->
+    <meta-data
+        android:name="CLEVERTAP_USE_GOOGLE_AD_ID"
+        android:value="1"/>
+
+    <meta-data
+        android:name="CLEVERTAP_BACKGROUND_SYNC"
+        android:value="1"/>
+
+    </application>
+
+</manifest>

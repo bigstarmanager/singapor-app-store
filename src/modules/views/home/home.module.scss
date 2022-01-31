@@ -1,0 +1,213 @@
+.homepageHeader {
+  background: #04565a;
+  padding: 0.8vw 3.865vw;
+  align-items: center;
+  ion-toolbar {
+    --border-width: 0;
+    display: flex;
+    align-items: center;
+    ion-row {
+      align-self: auto;
+    }
+  }
+  ion-searchbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #ffffff;
+    border-radius: 6px;
+    height: 40px;
+    --background: #ffffff;
+    --placeholder-color: #a2acb5;
+    --icon-color: #a2acb5;
+    --clear-button-color: #04565a;
+    --border-radius: 6px;
+  }
+  ion-buttons {
+    align-self: auto;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    ion-button {
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      margin: 0;
+    }
+    ion-button:first-child {
+      margin-left: 2.415vw;
+    }
+    ion-img {
+      height: 5vw;
+    }
+  }
+
+  .select-delivery-container {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 4px;
+
+    .delivery-text {
+      color: white;
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 5px;
+      line-height: 20px;
+    }
+    .delivery-select {
+      color: white;
+      --padding-top: 0px;
+      --padding-bottom: 0px;
+      --padding-end: 0px;
+      font-size: 16px;
+      font-family: 'Roboto';
+      font-weight: 500;
+      opacity: 1;
+      line-height: 20px;
+    }
+    // Custom arrow icon on ion-select
+    ion-select::part(icon) {
+      margin-left: 6px;
+      color: transparent;
+      opacity: 1;
+      background-image: url('/assets/images/chevron-down.svg');
+      // Default android icon width height
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+.homepageHeader::after {
+  display: none;
+}
+.homeContainer {
+  --background: #04565a;
+  background: #04565a;
+  .background-container {
+    background: #ffffff;
+  }
+  ion-refresher {
+    z-index: 30;
+  }
+  .background-white {
+    height: 100%;
+  }
+  .back-to-top {
+    z-index: 1000;
+    position: fixed;
+    top: -40px;
+    left: 36%;
+    padding: 10px;
+    background: #04565a;
+    border-radius: 20px;
+    font-size: 3.382vw;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  .back-to-top.show {
+    top: calc(115px + var(--ion-safe-area-top));
+    transition: all 0.5s ease-in-out;
+  }
+  .slide-background {
+    height: 24px;
+    background: #04565a;
+  }
+  .homeImageSlideContainer {
+    padding: 0 3.382vw;
+    margin-top: -4.348vw;
+    margin-bottom: 2.415vw;
+    .slider-container {
+      border-radius: 6px;
+    }
+  }
+  .mainCategoryContainer {
+    margin-top: 100px;
+  }
+  .home-no-supplier {
+    margin-top: 9.662vw;
+    padding: 0 7.488vw;
+    text-align: center;
+    .router-link {
+      color: #04565a;
+      font-weight: 500;
+    }
+  }
+  .no-supplier-img {
+    margin: 0 auto;
+    width: 48.309vw;
+  }
+  ion-label {
+    font-size: 4.348vw;
+    line-height: 5.314vw;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: #66717c;
+    display: block;
+  }
+  .no-supplier-desc {
+    margin-bottom: 9.662vw;
+  }
+  .no-image-banner {
+    border-radius: 6px !important;
+    overflow: hidden;
+  }
+}
+.login-sticky {
+  height: 64px;
+  background: rgba(102, 113, 124, 0.9);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ion-label {
+    color: #ffffff;
+    font-size: 4.348vw;
+    line-height: 5.314vw;
+  }
+}
+:global(.homeImageSlideContainer .swiper-pagination-bullet) {
+  background: #ffffff 80%;
+  opacity: 1;
+}
+:global(.homeImageSlideContainer .swiper-pagination-bullet-active) {
+  background: #04565a 90%;
+}
+:global(.homeImageSlideContainer .swiper-wrapper .hydrated) {
+  height: 31.401vw;
+  object-fit: initial;
+  border-radius: 4px;
+}
+:global(.toast-close-spree) {
+  --ion-color-base: rgba(102, 113, 124, 0.9) !important;
+}
+:global(.homepageHeader .searchbar-input-container .searchbar-input) {
+  padding-inline-start: 35px !important;
+  padding-inline-end: 0;
+  font-weight: 400;
+  font-size: 3.865vw;
+  line-height: 5.797vw;
+  box-shadow: none;
+}
+:global(.homepageHeader .searchbar-input-container .searchbar-search-icon) {
+  left: 1.415vw;
+  top: 1.415vw;
+}
+:global(.homepageHeader .searchbar-search-icon.sc-ion-searchbar-ios) {
+  top: 0;
+}
+:global(.alert-update-style .alert-wrapper) {
+  border-radius: 8px;
+  min-width: 70%;
+  min-height: 12%;
+}
+:global(.select-state-modal) {
+  --height: 20.5rem;
+  --width: 100%;
+}
+:global(.select-state-modal > div) {
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  bottom: 0%;
+  left: 0;
+  --border-radius: 12px 12px 0 0;
+}

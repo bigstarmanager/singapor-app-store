@@ -1,0 +1,96 @@
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.margin-y {
+  margin-top: 12px;
+}
+
+.header {
+  background: #04565a;
+  color: white;
+  font-family: 'Roboto';
+}
+
+.appbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.backBtn {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 24px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.subtitle {
+  font-size: 12px;
+}
+
+.circle-number {
+  width: 26px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: #ffffff;
+  background-color: #69989c;
+  border-radius: 50%;
+  object-fit: contain;
+  padding-top: 4px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.ion-image {
+  padding-right: 16px;
+}
+
+.ion-btn {
+  height: 80px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: none;
+  padding-top: 4px;
+}
+
+.ion-icon {
+  height: 23px;
+}
+
+.line-grey {
+  width: 86vw;
+  height: 2px;
+  background: #f0f0f0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-item {
+  font-size: 14px;
+  color: #888888;
+}
+
+.tour-btn {
+  width: 50vw;
+  height: 48px;
+  color: #ffffff;
+  text-transform: none;
+  border-radius: 4px;
+}
+
+.space-bottom {
+  padding-bottom: 5vh;
+}

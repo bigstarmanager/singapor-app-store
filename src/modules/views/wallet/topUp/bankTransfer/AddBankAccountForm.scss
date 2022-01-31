@@ -1,0 +1,102 @@
+form {
+  margin-top: 28px;
+  padding: 0 16px;
+
+  > ion-item {
+    margin-bottom: 20px;
+  }
+
+  div.error {
+    margin-top: -12px;
+    margin-bottom: 20px;
+  }
+
+  div.radio-input-group {
+    margin-bottom: 24px;
+
+    p {
+      color: #66717c;
+      font-size: 14px;
+    }
+
+    ion-item {
+      --min-height: 36px;
+      --padding-start: 0;
+      margin: 0 0 0 0;
+
+      input {
+        width: 16px;
+        height: 16px;
+        margin: 0 0 0 4px;
+        text-align: left;
+      }
+
+      label {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+ion-item.voucher-container {
+  --min-height: 46px;
+  --highlight-height: 0;
+  border-radius: 4px;
+  border: 1px solid #e4e5e6;
+
+  &.error {
+    border: solid 1px #cb3c3c;
+  }
+
+  ion-input {
+    --height: 48px;
+    text-align: left;
+  }
+}
+
+div.error {
+  color: #cb3c3c;
+  margin-left: 16px;
+}
+
+ion-footer {
+  // https://treedots.atlassian.net/browse/TREE-2386
+  &:before {
+    background-image: none;
+  }
+}
+
+.select-bank {
+  --width: 100vw;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.nameSymbol {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-right: 10px;
+}
+
+.bankName {
+  font-size: 16px;
+}
+
+.back-btn {
+  color: #04565a;
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+}
+
+.back-icon {
+  font-size: 30px;
+  color: #04565a;
+  margin-left: -16px;
+}
+
+.title-toolbar {
+  font-size: 16px;
+  color: #000000;
+}

@@ -1,0 +1,104 @@
+ion-item.transaction {
+  height: 90px;
+  padding: 22px 0 22px 0;
+  overflow: visible;
+
+  ion-skeleton-text {
+    display: inline-block;
+  }
+
+  div[slot='end'] {
+    margin-inline-start: 0;
+    text-align: end;
+  }
+
+  div {
+    overflow: visible;
+
+    div ~ div {
+      margin-top: 10px;
+    }
+
+    &.title {
+      font-weight: bold;
+    }
+
+    &.description {
+      position: relative;
+      color: #888888;
+
+      p {
+        width: 60vw;
+        top: 0;
+        margin: 0;
+        position: absolute;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    &.date {
+      color: #888888;
+      font-size: 14px;
+    }
+
+    &.amount {
+      font-size: 18px;
+
+      span {
+        font-size: 18px;
+      }
+
+      &.positive {
+        span {
+          color: $cart-button-color;
+        }
+      }
+
+      ion-img {
+        display: inline-block;
+        margin-left: 13px;
+        width: 8px;
+        height: 13px;
+      }
+    }
+  }
+}
+
+.status-normal {
+  background: #{$cart-disabled-button-color};
+  color: #000;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  vertical-align: middle;
+  border-radius: 16px;
+}
+
+.status-failed {
+  background: #fff0ed;
+  color: #d90d0d;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  vertical-align: middle;
+  border-radius: 16px;
+}
+
+.info {
+  margin-left: 6px;
+  height: 20px;
+  width: 20px;
+}
+
+:global(.fail-info .popover-content) {
+  border-radius: 12px;
+  padding: 16px;
+  --background: #010219;
+  width: 92%;
+}

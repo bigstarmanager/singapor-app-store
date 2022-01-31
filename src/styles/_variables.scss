@@ -1,0 +1,25 @@
+$cart-button-color: #04565a;
+$cart-disabled-button-color: #f4f6f8;
+$checkout-background-color: #f8fbff;
+$margin-between-icons: 0 0 0 20px;
+$margin-between-icons-2: 0 0 0 10px;
+$margin-between-icons-3: 0 0 0 7px;
+$delete-btn-width: 80px;
+$quantity-btn-radius: 4px;
+
+$login-background: '/assets/images/login-bg.svg' !default;
+$login-background-color: #e6eeef;
+$login-button-color: $cart-button-color;
+$login-button-disabled-color: $cart-disabled-button-color;
+
+$error-msg-color: #cb3c3c;
+
+@for $i from 1 to 5 {
+  .t-m-#{$i} {
+    margin-top: #{16 * $i}px !important;
+  }
+}
+
+.p-a {
+  position: absolute;
+}

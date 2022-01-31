@@ -1,0 +1,75 @@
+div.top-up {
+  div.header {
+    ion-item {
+      --min-height: 0px;
+      margin-top: 6px;
+
+      &:first-of-type {
+        --inner-padding-top: 12px;
+      }
+
+      ion-label {
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+        position: absolute;
+      }
+    }
+  }
+
+  ion-list {
+    ion-item {
+      --min-height: 0;
+      ion-label {
+        --color: #a2aca5 !important;
+        font-size: 14px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    ion-item.payment-method {
+      p {
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+
+    ion-item.fee {
+      p {
+        color: $cart-button-color;
+      }
+    }
+
+    ion-item.total {
+      ion-label {
+        --color: #000000 !important;
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+div.top-up-complete {
+  text-align: center;
+
+  &.top-up-fail {
+    margin-top: 40px;
+  }
+
+  p {
+    margin: 4px;
+  }
+
+  p.title {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,133 @@
+.top-div {
+  padding: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-grey {
+  font-size: 16px;
+  color: #888888;
+}
+
+.link-bank {
+  font-size: 14px;
+  color: #888888;
+}
+
+.bank-tf {
+  font-size: 14px;
+  color: #000000;
+}
+
+.text-black {
+  font-size: 16px;
+  color: #000000;
+}
+
+.withdraw-balance {
+  font-size: 48px;
+  color: #000000;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.info {
+  margin-left: 8px;
+  color: black;
+}
+
+.row-center {
+  background-color: aquamarine;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.space-top {
+  width: 100%;
+  background: #f4f6f8;
+  color: #888888;
+  font-size: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.margin-y {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bank-label {
+  margin-left: 16px;
+}
+
+:global(.withdraw-info .popover-content) {
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  --background: #010219;
+  width: 94%;
+}
+
+.popover {
+  background: #010219;
+  color: white;
+}
+
+.info-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tf-label {
+  font-size: 14px;
+  color: #04565a;
+  margin-left: 12px;
+}
+
+.info-content {
+  font-size: 14;
+}
+
+.back-btn {
+  color: #04565a;
+  border-radius: 50%;
+}
+
+.add-bank {
+  margin-bottom: 16px;
+}
+
+.e-wallet-load ion-skeleton-text {
+  text-align: center;
+  width: 50vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.e-wallet-load-small {
+  width: 12vw;
+  height: 16px;
+  border-radius: 4px;
+  margin-top: -4px;
+}
+
+.bank-list {
+  margin-left: 16px;
+  margin-right: 16px;
+}

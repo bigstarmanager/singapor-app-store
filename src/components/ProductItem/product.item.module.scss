@@ -1,0 +1,208 @@
+.volume-deal {
+  position: absolute;
+  z-index: 20;
+  background: #cb3c3c;
+  display: inline-block;
+  top: 1.932vw;
+  left: -1.449vw;
+  justify-content: center;
+  padding: 0 1.449vw;
+  border-radius: 2px;
+  span {
+    font-size: 3.623vw;
+    font-weight: 500;
+    line-height: 5.797vw;
+    color: #ffffff;
+  }
+}
+.wrapper {
+  overflow: hidden;
+  font-family: 'Roboto';
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  .discount {
+    position: absolute;
+    z-index: 20;
+    background: #cb3c3c;
+    display: flex;
+    left: 2.174vw;
+    bottom: 4px;
+    justify-content: center;
+    padding: 0 1.208vw;
+    border-radius: 2px;
+    span {
+      font-size: 3.623vw;
+      font-weight: 500;
+      line-height: 5.797vw;
+      color: #ffffff;
+    }
+  }
+  .top-badge {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    top: 0px;
+    right: 10px;
+    .top_badgeimage {
+      width: 8.454vw;
+      height: 10.87vw;
+    }
+  }
+  .crown-badge {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    top: 5.314vw;
+    left: 50%;
+    transform: translateX(-50%);
+    .crownimage {
+      width: 4.348vw;
+      height: 3.14vw;
+    }
+  }
+  .rank-badge {
+    position: absolute;
+    z-index: 20;
+    top: 5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    span {
+      font-size: 3.382vw;
+      font-weight: 500;
+      line-height: 1.1;
+      color: #ffffff;
+    }
+  }
+  .other-rank-badge {
+    position: absolute;
+    top: 2.415vw;
+    right: 0px;
+    font-size: 3.623vw;
+    line-height: 4.348vw;
+    font-weight: 500;
+    background-color: #04565a;
+    padding: 2px 1.932vw;
+    color: white;
+    border-radius: 2px;
+  }
+  .halal {
+    position: absolute;
+    right: 1.932vw;
+    bottom: 4px;
+    font-size: 3.623vw;
+    line-height: 3.623vw;
+    background-color: #04565a;
+    padding: 2px 1.932vw;
+    color: white;
+    border-radius: 2px;
+  }
+  .pooling-badge {
+    width: 5.797vw;
+    position: absolute;
+    right: 1.932vw;
+    bottom: 7.9vw;
+  }
+  .header {
+    contain: content;
+    position: relative;
+    .image {
+      width: 100%;
+      height: 38.647vw;
+      object-fit: cover;
+      padding-bottom: 3.865vw;
+    }
+  }
+  .preLoading {
+    position: absolute;
+  }
+  .product-info {
+    padding: 2.899vw 1.932vw;
+    min-height: 29.71vw;
+    .product-title-container {
+      height: 19.324vw;
+    }
+    .title {
+      min-height: 4.831vw;
+      span {
+        font-size: 3.865vw;
+        font-weight: 400;
+        line-height: 4.831vw;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+    .supplier {
+      margin-top: 3px;
+      min-height: 4.831vw;
+      span {
+        font-size: 3.623vw;
+        font-weight: 400;
+        line-height: 4.589vw;
+        text-align: left;
+        color: #9e9e9e;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+    .marketPrice {
+      margin-top: 1.691vw;
+      font-size: 3.623vw;
+      line-height: 3.382vw;
+      text-align: left;
+      color: #9e9e9e;
+      text-decoration-line: line-through;
+      min-height: 3.382vw;
+    }
+    .price {
+      margin-top: 1.691vw;
+      span {
+        font-size: 4.831vw;
+        text-align: left;
+        color: #04565a;
+        line-height: 3.382vw;
+      }
+    }
+  }
+}
+.out_of_stock {
+  .volume-deal {
+    background: #707070;
+  }
+  .discount {
+    background: #707070;
+  }
+  .halal {
+    background: #707070;
+  }
+  ion-img {
+    opacity: 0.6;
+  }
+  .top-badge .top_badgeimage {
+    opacity: 1;
+  }
+}
+.out_price {
+  position: absolute;
+  bottom: 2.899vw;
+  right: 2.174vw;
+  font-weight: 500;
+  font-size: 4.831vw;
+  color: #707070;
+}
+
+ion-content {
+  --overflow: hidden;
+}
+
+.ripple-parent {
+  position: relative;
+}

@@ -1,0 +1,38 @@
+.onboardingSlider {
+  height: 100%;
+}
+.onboardingTitlePart {
+  min-height: 50px;
+  margin-top: 7.246vw;
+}
+.onboardingTitle {
+  color: #04565a;
+  font-weight: 500;
+  font-size: 5.797vw;
+  line-height: 7.246vw;
+}
+.onboardingText {
+  font-size: 4.348vw;
+  line-height: 5.797vw;
+  margin-top: 2.415vw;
+}
+.onboardingButton {
+  margin-top: 14.493vw;
+  font-weight: 500;
+  font-size: 3.865vw;
+  line-height: 5.797vw;
+  font-family: 'Roboto';
+  text-transform: inherit;
+  height: 11.594vw;
+}
+:global(.onboardingContainer .onboardingSlider .swiper-pagination-bullet) {
+  background: #04565a;
+  opacity: 0.4;
+}
+:global(.onboardingContainer .onboardingSlider .swiper-pagination-bullets) {
+  bottom: 40px;
+}
+:global(.onboardingContainer .onboardingSlider .swiper-pagination-bullet-active) {
+  background: #04565a;
+  opacity: 1;
+}

@@ -1,0 +1,46 @@
+:global(.backdrop-no-scroll .deleteToast) {
+  --max-width: 92.271vw;
+  --border-radius: 6px;
+  --backdrop-opacity: 0;
+  --max-height: 11.594vw;
+}
+:global(.deleteToast .deleteToastContainer) {
+  --padding-start: 5.314vw;
+  --padding-end: 3.865vw;
+  text-align: center;
+  color: #ffffff;
+  --background: rgba(102, 113, 124, 0.9);
+}
+:global(.deleteToast .modal-wrapper) {
+  position: fixed;
+  bottom: 104px;
+}
+.deleteToastContainer .delete_body {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.deleteToastContainer .delete_body .deleteText {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 3.865vw;
+  line-height: 4.348vw;
+}
+.deleteToastContainer .delete_body .undoBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  height: 11.594vw;
+  --background: rgba(102, 113, 124, 0.9);
+  --background-activated: rgba(102, 113, 124, 0.9);
+  font-weight: 500;
+  font-size: 4.348vw;
+  line-height: 3.865vw;
+  --box-shadow: none;
+}
+.deleteToastContainer .iconTrash {
+  width: 5.797vw;
+  margin-right: 10px;
+}

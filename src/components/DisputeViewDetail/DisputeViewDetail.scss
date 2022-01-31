@@ -1,0 +1,50 @@
+ion-header {
+  border-bottom: 1px;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #e1e4e6;
+  padding: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .view-history-title {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+ion-content {
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  font-family: 'Roboto';
+
+  .description-label {
+    font-size: 14px;
+  }
+  .description-text {
+    color: #707070;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .attachment-container {
+    border-top-width: 1px;
+    border-top-color: #888888;
+    border-top-style: solid;
+
+    .attachment-label {
+      font-size: 14px;
+    }
+    .attachment-image {
+      height: 80px;
+      border-radius: 4px;
+    }
+    .attachment-date {
+      color: #888888;
+      font-size: 12px;
+    }
+  }
+}

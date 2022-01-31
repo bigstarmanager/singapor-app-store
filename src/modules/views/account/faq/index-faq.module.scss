@@ -1,0 +1,121 @@
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.margin-y {
+  margin-top: 12px;
+}
+
+.margin-x {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header {
+  background: #04565a;
+  color: white;
+  font-family: 'Roboto';
+}
+
+.appbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.backBtn {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 24px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content-padding {
+  padding: 16px;
+}
+
+.text-center {
+  text-align: 'center';
+  align-items: center;
+  align-content: center;
+}
+
+.text-item {
+  font-size: 14px;
+  color: #888888;
+}
+
+.text-item-black {
+  font-size: 14px;
+  text-align: start;
+}
+
+.faq_icon {
+  margin-right: 10px;
+}
+.ionIcon {
+  color: #888888;
+  font-size: 18px;
+}
+
+.ion-btn {
+  height: 80px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: none;
+  padding-top: 4px;
+  color: #000000;
+}
+
+.bottom-menu {
+  max-width: 72px;
+}
+
+.ion-icon {
+  height: 23px;
+}
+.text-item-clicked {
+  font-size: 14px;
+  color: #04565a;
+}
+
+.ion-row {
+  width: 72vw;
+}
+
+.chevron {
+  text-align: end;
+}
+
+.more {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.more-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.space {
+  width: 100%;
+  height: 8px;
+  background: #f4f6f8;
+}
+
+.space-bottom {
+  height: 5vh;
+  width: 100%;
+  background: transparent;
+}

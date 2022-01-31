@@ -1,0 +1,21 @@
+.supplier {
+  --min-height: 40px;
+
+  ion-img {
+    width: 18px;
+    height: 18px;
+  }
+
+  @media screen and (min-width: 700px) {
+    ion-img {
+      width: 1.25em;
+      height: 1.25em;
+    }
+
+    ion-label {
+      strong {
+        font-size: 1.25em;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.supplier-list {
+  margin-left: 3.865vw;
+  margin-right: 3.865vw;
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4.348vw;
+    line-height: 5.797vw;
+    font-weight: 400;
+    span {
+      margin: 7.246vw 0 5.556vw;
+    }
+    .see_more {
+      font-size: 3.623vw;
+      color: #04565a;
+      font-weight: 500;
+    }
+  }
+  .suppliers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.382vw 2.899vw;
+  }
+  .skeleton_supplier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.382vw 2.899vw;
+    .supplier-item {
+      display: flex;
+      padding: 6.039vw 4.831vw 6.039vw 2.415vw;
+      background: #ffffff;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      font-size: 3.623vw;
+      .supplier_text {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2.415vw;
+      }
+    }
+  }
+}

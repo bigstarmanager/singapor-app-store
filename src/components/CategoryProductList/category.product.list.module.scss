@@ -1,0 +1,115 @@
+.subCategory_content {
+  margin: 4.831vw 3.865vw 0 3.865vw;
+  .subCategory_list {
+    margin-left: -10px;
+    margin-bottom: 5px;
+  }
+  .subCategory_slide {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    align-items: center;
+    .subCategory_slide_item {
+      height: 100%;
+      margin-right: 2.415vw;
+      padding: 2.415vw 3.865vw;
+      &.selected {
+        background: #04565a;
+        color: white;
+        border-radius: 4.831vw;
+        .subCategory_slide_title {
+          color: #ffffff;
+        }
+      }
+      .subCategory_slide_title {
+        font-family: 'Roboto';
+        font-size: 3.382vw;
+        font-weight: 500;
+        line-height: 3.382vw;
+        text-align: center;
+        color: #010219;
+      }
+    }
+    .skeleton-subcategory {
+      width: 12.077vw;
+      height: 6.039vw;
+      border-radius: 10px;
+      margin: 0 3.665vw 5px 3.665vw;
+    }
+  }
+  .subCategory_sticky {
+    position: fixed;
+  }
+  .subProduct_list {
+    padding: 0;
+    .product_item {
+      padding: 0;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+  .noSubcategory {
+    display: grid;
+    margin-top: 9.662vw;
+    ion-img {
+      height: 48.309vw;
+      margin-bottom: 4.831vw;
+    }
+    ion-label {
+      text-align: center;
+      font-size: 4.348vw;
+      line-height: 5.797vw;
+      color: #000000;
+    }
+  }
+  .skeleton_list {
+    padding: 0;
+    margin-top: 2.415vw;
+    .product_list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.831vw 2.899vw;
+    }
+    .skeleton_item {
+      padding: 0;
+    }
+    .wrapper {
+      overflow: hidden;
+      padding: 0px 6px 2.899vw;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      position: relative;
+      margin-bottom: 0.5rem;
+      .image {
+        margin-top: 5px;
+        width: 100%;
+        height: 38.647vw;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.subCategory_sticky {
+  .subCategory_list {
+    position: fixed;
+    top: calc(48px + var(--ion-safe-area-top));
+    z-index: 99;
+    background: white;
+    width: 100%;
+    padding-top: 10px;
+    animation: headerAnimation 0.5s ease;
+  }
+  .subProduct_list {
+    // padding-top: 180px;
+  }
+}
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

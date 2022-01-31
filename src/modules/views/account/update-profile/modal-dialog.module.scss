@@ -1,0 +1,116 @@
+@import '@/styles/variables';
+
+// .manageBtn {
+//   background: #04565a;
+//   text-transform: none;
+//   border-radius: 4px;
+//   height: 42px;
+//   color: #ffffff;
+//   margin-top: 24px;
+// }
+
+ion-button.manageBtn {
+  text-transform: none;
+  border-radius: 4px;
+  height: 42px;
+  color: #ffffff;
+  margin-top: 19px;
+  --background: #{$login-button-color};
+  --box-shadow: 0;
+}
+
+ion-button.manageBtn[disabled] {
+  text-transform: none;
+  border-radius: 4px;
+  height: 42px;
+  color: #a2acb5;
+  margin-top: 19px;
+  --background: #{$login-button-disabled-color};
+  --box-shadow: 0;
+}
+
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.padding-y {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.margin-x {
+  margin-right: 4px;
+}
+
+.title-modal {
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+}
+
+.label-text {
+  font-size: 14px;
+  color: #888888;
+}
+
+.info {
+  background-color: #f4fff0;
+  padding: 16px;
+  border-radius: 4px;
+}
+.info-icon {
+  margin-right: 10px;
+}
+.close-icon {
+  color: #888888;
+  font-size: 22px;
+  text-align: right;
+}
+
+.name-item {
+  margin-right: 3px;
+}
+
+.email-item {
+  margin-right: 3px;
+}
+
+.email-item-bottom {
+  margin-top: -10px;
+  margin-right: 3px;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #cb3c3c;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.hide-space {
+  height: 15px;
+}
+
+.ionIcon {
+  height: 20px;
+  max-width: 24px;
+  margin-right: 10px;
+}
+
+:global(.success-toast) {
+  color: #ffffff;
+  text-align: left;
+  padding: 4px;
+  border-radius: 6px;
+  --background: rgba(102, 113, 124, 0.9);
+}
+
+:global(.failed-toast) {
+  color: #ffffff;
+  text-align: left;
+  padding: 4px;
+  border-radius: 6px;
+  --background: rgba(255, 73, 73, 0.9);
+}

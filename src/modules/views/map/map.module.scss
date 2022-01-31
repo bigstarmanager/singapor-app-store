@@ -1,0 +1,180 @@
+.map {
+  .hub-map {
+    height: 100vh;
+    background-color: rgb(228, 220, 220);
+    .full-map {
+      width: 100%;
+      height: calc(100% - 56px);
+      transition: all 0.3s ease-out 0s;
+    }
+    .half-map {
+      width: 100%;
+      height: calc(70% - 56px);
+      transition: all 0.3s ease-out 0s;
+    }
+
+    ion-toggle {
+      zoom: 0.75;
+      --background-checked: #4ed164;
+    }
+
+    .toogle {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      .toogle-with-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding: 5px 5px 5px 10px;
+        color: #000;
+        border-radius: 16px;
+
+        ion-label {
+          font-size: 16px;
+          padding-right: 8px;
+        }
+      }
+    }
+
+    .bottom-drawer {
+      transition: all 0.3s ease-out 0s;
+      -moz-box-shadow: 0px 6px 5px 6px #ccc;
+      -webkit-box-shadow: 0px 6px 5px 6px #ccc;
+      box-shadow: 0px 6px 5px 6px #ccc;
+      background-color: #fff;
+      position: absolute;
+      top: 60%;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 99999;
+
+      .search-area {
+        color: #fff;
+        height: 52px;
+        background-color: #64ae0f;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .recenter {
+        position: absolute;
+        top: -4rem;
+        padding: 0 1rem 0;
+        width: 100%;
+        .locate-me {
+          width: 52px;
+        }
+      }
+
+      .btn-container {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn-swipe {
+          background-color: #bfb9b9;
+          width: 40px;
+          height: 4px;
+          border-radius: 20px;
+        }
+      }
+
+      .border-bottom {
+        border-bottom: 2px solid #f0f0f0;
+        .search-input {
+          height: 48px;
+          padding: 16px !important;
+          background: rgba(0, 0, 0, 0.05);
+          border-radius: 4px;
+          font-size: 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            color: #66717c;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+          ion-icon {
+            color: #04565a;
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+  .no-cp {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 2rem;
+    margin: 0;
+  }
+  .hub-list {
+    height: calc(40% - 90px);
+    transition: all 0.3s ease-out 0s;
+    h2 {
+      width: 90%;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    p {
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.2rem;
+      letter-spacing: 0px;
+      color: #000;
+    }
+    .nametext {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .halal {
+      color: #04565a;
+    }
+    .closed {
+      color: #98969a;
+    }
+    .open {
+      color: #04565a;
+    }
+    .sub-text {
+      color: #04565a;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+ion-title {
+  font-size: 1.125rem;
+}
+
+:global(.location-permission-modal) {
+  --height: 17.3rem;
+  --width: 100%;
+  padding: 16px;
+}
+:global(.location-permission-modal .modal-wrapper) {
+  min-height: 33rem;
+}
+:global(.location-permission-modal > div) {
+  --border-radius: 8px;
+}

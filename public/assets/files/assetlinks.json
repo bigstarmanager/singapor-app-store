@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.thetreedots.social",
+      "sha256_cert_fingerprints": [
+        "EE:E9:64:3A:B2:C3:02:EC:96:A1:FC:79:15:5D:83:37:00:EB:99:88:6D:3F:CD:E6:DD:BB:D0:78:8F:97:68:91"
+      ]
+    }
+  }
+]

@@ -1,0 +1,35 @@
+.category-item {
+  height: 100px;
+  position: relative;
+  ion-skeleton-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+  }
+  .category {
+    color: #ffffff;
+    position: relative;
+    height: 100%;
+    border-radius: 6px;
+    .image {
+      object-fit: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 6px !important;
+      overflow: hidden;
+    }
+    span {
+      left: 2.415vw;
+      top: 1.449vw;
+      position: absolute;
+      font-family: 'Roboto';
+      font-size: 4.348vw;
+      font-weight: 500;
+      line-height: 5.797vw;
+      letter-spacing: normal;
+    }
+  }
+}

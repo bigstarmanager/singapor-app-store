@@ -1,0 +1,49 @@
+.search {
+  background: #04565a;
+  padding-top: var(--ion-safe-area-top);
+  .header {
+    background: #04565a;
+    padding: 1.932vw 3.865vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ion-back-button {
+      padding-right: 3.865vw;
+      color: #ffffff;
+      min-width: 7.488vw;
+      &::part(native) {
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        --min-width: 7.488vw;
+        --padding-start: 0;
+      }
+    }
+  }
+  ion-searchbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #ffffff;
+    border-radius: 6px;
+    height: 40px;
+    --background: #ffffff;
+    --placeholder-color: #a2acb5;
+    --icon-color: #a2acb5;
+    --clear-button-color: #04565a;
+    --border-radius: 6px;
+  }
+}
+:global(.search .searchbar-input-container .searchbar-input) {
+  padding-inline-start: 35px !important;
+  font-weight: 400;
+  font-size: 3.865vw;
+  line-height: 5.797vw;
+  box-shadow: none;
+}
+:global(.search .searchbar-input-container .searchbar-search-icon) {
+  left: 1.415vw;
+  top: 1.415vw;
+}
+:global(.search .searchbar-search-icon.sc-ion-searchbar-ios) {
+  top: 0;
+}

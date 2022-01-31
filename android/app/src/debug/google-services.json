@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "272033796303",
+    "project_id": "treedots-testing",
+    "storage_bucket": "treedots-testing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272033796303:android:2b16360978ce03a6a4e7ba",
+        "android_client_info": {
+          "package_name": "com.thetreedots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272033796303-kdu4pr5s2rs07qv97aa09vuv0qp555l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZIeRurpG2xjhPiCqUgYEVpyRGM9JIAkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272033796303-kdu4pr5s2rs07qv97aa09vuv0qp555l6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "272033796303-lg9pht7rus6r8bgtcthndi4o10kjgeib.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thetreedots.social"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272033796303:android:241bf4f8b4852381a4e7ba",
+        "android_client_info": {
+          "package_name": "com.thetreedots.social.testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272033796303-kdu4pr5s2rs07qv97aa09vuv0qp555l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZIeRurpG2xjhPiCqUgYEVpyRGM9JIAkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272033796303-kdu4pr5s2rs07qv97aa09vuv0qp555l6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "272033796303-lg9pht7rus6r8bgtcthndi4o10kjgeib.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thetreedots.social"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

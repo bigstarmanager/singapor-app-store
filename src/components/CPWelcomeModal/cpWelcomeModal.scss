@@ -1,0 +1,55 @@
+:global(.backdrop-no-scroll .cp-welcome) {
+  --max-width: 80.676vw;
+  --border-radius: 4px;
+  --backdrop-opacity: 0.5;
+  --max-height: 170px;
+}
+:global(.cp-welcome .cp-welcome-header .title) {
+  --border-width: 0;
+  --padding-start: 5.797vw;
+  --padding-top: 4.831vw;
+}
+:global(.cp-welcome .cp-welcome-header .title .cp-welcome-title) {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #000000;
+}
+:global(.cp-welcome .cp-welcome-content) {
+  --padding-start: 5.797vw;
+  --padding-end: 5.797vw;
+  --padding-top: 2.899vw;
+  --padding-bottom: 4.831vw;
+  font-family: 'Roboto';
+  font-size: 3.865vw;
+  line-height: 4.831vw;
+}
+.cp-welcome-content .cp-welcome-buttons {
+  margin-top: 6.763vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.cp-welcome-content .cp-welcome-buttons ion-label {
+  color: #04565a;
+  font-size: 3.865vw;
+  line-height: 3.865vw;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+.cp-welcome-content .cp-welcome-buttons ion-label:first-child {
+  margin-right: 12px;
+}
+.cp-welcome-content .cp-welcome-buttons .star:last-child {
+  margin-right: 0;
+}
+.waIcon {
+  --border-color: white;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --min-height: auto;
+  margin-left: 8px;
+  ion-img {
+    width: 4.831vw;
+  }
+}

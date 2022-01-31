@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "7MA32WM3J6.com.thetreedots.social.testing",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

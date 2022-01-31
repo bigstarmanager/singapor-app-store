@@ -1,0 +1,193 @@
+.supplier_header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 0.8vw 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  ion-toolbar {
+    --border-width: 0;
+    display: flex;
+    align-items: center;
+  }
+  ion-back-button {
+    padding-right: 3.865vw;
+    padding-left: 3.865vw;
+    color: #04565a;
+    &::part(native) {
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      --padding-start: 0;
+    }
+  }
+  ion-buttons {
+    align-self: auto;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    &:last-child {
+      margin-right: 3.865vw;
+    }
+  }
+  ion-label {
+    font-size: 4.348vw;
+    font-weight: 500;
+    line-height: 4.589vw;
+    padding-left: 3.865vw;
+  }
+  .search-icon {
+    font-size: 4.831vw;
+    color: #04565a;
+  }
+  ion-searchbar {
+    padding-top: 0;
+    --box-shadow: none;
+    background: #ffffff;
+    border-radius: 6px;
+    height: 40px;
+    padding-bottom: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    --background: #ffffff;
+    --placeholder-color: #a2acb5;
+    --icon-color: #a2acb5;
+    --clear-button-color: #04565a;
+    --border-radius: 6px;
+  }
+}
+:global(.supplier_header .searchbar-input.sc-ion-searchbar-md) {
+  padding-inline-start: 3.865vw;
+  padding-inline-end: 3.865vw;
+}
+:global(.supplier_header .searchbar-input.sc-ion-searchbar-ios) {
+  font-size: 4.348vw;
+  line-height: 5.797vw;
+  border-radius: 6px;
+  padding-inline-start: 0 !important;
+}
+:global(.supplier_header .searchbar-clear-button .searchbar-clear-icon) {
+  color: #04565a;
+  width: 5.314vw;
+}
+:global(.supplier_header .searchbar-clear-button .searchbar-clear-button) {
+  opacity: 1 !important;
+}
+.supplierListContainer {
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+  }
+  .loading-spinner {
+    margin-top: 30px;
+  }
+  .supplierSkeleton {
+    margin-bottom: 4.831vw;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    &-text {
+      width: 100%;
+      margin-left: 1rem;
+    }
+  }
+  .sidebar {
+    position: fixed;
+    right: 4.589vw;
+    top: 18.116vw;
+    display: flex;
+    flex-flow: column;
+    background: #f4f6f8;
+    z-index: 60;
+    padding-top: 3.865vw;
+    padding-bottom: 3.865vw;
+    opacity: 0.5;
+    border-radius: 18px;
+    .letter {
+      --background: #f4f6f8;
+      font-size: 2.899vw;
+      color: #95989a;
+      display: flex;
+      list-style: none;
+      width: 5.797vw;
+      font-weight: 500;
+      line-height: 4.831vw;
+      cursor: pointer;
+      letter-spacing: normal;
+      text-align: center;
+      --padding-start: 1.691vw;
+      --inner-padding-end: 1.691vw;
+      --min-height: 5.4vw;
+    }
+  }
+  .supplier-list-container {
+    background-color: #f4f6f8;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    .items {
+      --padding-start: 0;
+      --padding-top: 0;
+      --padding-bottom: 0;
+      --inner-padding-bottom: 0;
+      --inner-padding-end: 0;
+      --inner-padding-start: 0;
+      --inner-padding-top: 0;
+      --background: transparent;
+      --min-height: 0px;
+      .letter {
+        margin: 0;
+        padding: 0;
+        padding-left: 2.899vw;
+        display: flex;
+        align-items: center;
+        font-size: 2.899vw;
+        font-weight: 500;
+        color: #04565a;
+        height: 8.696vw;
+        line-height: 2.415vw;
+      }
+      .supplierItem {
+        display: inline-flex;
+        align-items: center;
+        background: #ffffff;
+        padding-left: 5.314vw;
+        width: 100%;
+        padding-right: 12.077vw;
+        border-bottom: 2px solid #e5e5e5;
+        height: 18.357vw;
+        --padding-start: 0;
+        --inner-border-width: 0;
+      }
+      .supplier {
+        margin: 0;
+        padding: 0;
+        background: white;
+        align-items: center;
+        font-size: 3.865vw;
+        line-height: 4.589vw;
+        color: #000000;
+        white-space: inherit;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        --max-lines: 2;
+        overflow: hidden;
+      }
+    }
+  }
+  .no-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .no-search-text {
+      margin-top: 100px;
+      display: block;
+      color: #66717c;
+      font-size: 4.348vw;
+      font-weight: 400;
+      line-height: 5.797vw;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.thetreedots.social">
+
+    <application
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round">
+
+      <activity android:name=".MainActivity">
+
+        <intent-filter android:autoVerify="true" android:label="@string/app_name">
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+          <data android:scheme="https" android:host="social.thetreedots.com" />
+          <data android:scheme="clevertapstarter" />
+        </intent-filter>
+      </activity>
+
+      <meta-data
+        tools:replace="android:value"
+        android:name="CLEVERTAP_ACCOUNT_ID"
+        android:value="RRR-K95-7Z6Z"/>
+
+      <meta-data
+        tools:replace="android:value"
+        android:name="CLEVERTAP_TOKEN"
+        android:value="5c3-222"/>
+
+    </application>
+</manifest>

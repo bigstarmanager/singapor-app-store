@@ -1,0 +1,225 @@
+.header {
+  ion-back-button {
+    color: #04565a;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  #user-avatar {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  #reply-icon {
+    color: #04565a;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 24px;
+    width: 24px;
+  }
+
+  #avatar-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  #chat-title {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    #chat-channel-name {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 19px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #chat-sub {
+      font-size: 14px;
+      line-height: 16px;
+      color: #9e9e9e;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 80%;
+    }
+  }
+}
+
+.chat-description-container {
+  width: 100%;
+  position: absolute;
+  top: 46px;
+  z-index: 101;
+  background-color: #f4fff0;
+  padding: 16px;
+
+  .description-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .description-title {
+    color: #66717c;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .description-close {
+    width: 12px;
+    height: 12px;
+  }
+  .description-content {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+  .description-see-more {
+    color: #04565a;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .description-see-less-arrow {
+    margin-left: 8px;
+  }
+}
+
+.chatMessageContainer {
+  ion-infinite-scroll-content {
+    min-height: 4px;
+  }
+  .chat-input {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+
+  .text-bold {
+    font-weight: bold;
+    font-size: 0.75rem;
+
+    .text-caption {
+      font-size: 0.5rem;
+    }
+  }
+
+  .replyMessage {
+    color: white !important;
+    width: 100%;
+  }
+
+  .sentMessage {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: white;
+  padding-bottom: var(--ion-safe-area-bottom);
+  justify-content: center;
+
+  .toolbar-footer {
+    padding: 0px;
+    .attachment-options {
+      margin: 18px;
+      justify-content: space-evenly;
+
+      .attachment-button-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .attachment-button {
+        background: var(--ion-color-base-theme-color);
+        background-color: #04565a;
+        color: #fff;
+        border-radius: 30px;
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+      }
+
+      .attachment-label {
+        color: #66717c;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  .message-preview {
+    padding: 5px;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .footer-message {
+    display: flex;
+    align-items: flex-end;
+    #input-container {
+      flex-direction: row;
+      display: flex;
+      width: 100%;
+      background-color: #f8f8f8;
+      border-radius: 100px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      align-items: flex-end;
+    }
+    #send-message {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+    #message-input {
+      background-color: rgb(248, 248, 248);
+      align-self: center;
+      border-radius: 30px;
+      margin-top: 0px;
+      padding: 4px 10px;
+    }
+    #attachment-icon {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .mentioned-users-container {
+    z-index: 100;
+    padding: 5px;
+  }
+  .mentioned-user-item {
+    padding: 2px;
+  }
+  .mentioned-user-span {
+    background-color: #e4f5fc;
+    color: #0687c0;
+    border-radius: 5px;
+    padding: 2px;
+  }
+}
+
+:global(.toastMessage) {
+  --background: rgba(102, 113, 124, 0.9);
+  --color: white;
+}
+
+:global(.delete-message-confirm .alert-wrapper) {
+  background: white;
+  font-size: 14px;
+  color: #888888;
+  width: 80vw;
+  min-width: 80vw;
+}

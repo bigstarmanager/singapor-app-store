@@ -1,0 +1,212 @@
+.chatMessageContainer {
+  .chat-borders-radius {
+    border-radius: 0.75em;
+  }
+  .button-attachment {
+    background-color: #6eb31f;
+    height: 43px;
+    width: 43px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+  .chat-input {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+  .attachment-selector {
+    bottom: 80px;
+    width: 100%;
+    background-color: white;
+    height: 85px;
+    box-shadow: 0px 10px 5px #fff, 0px -3px 15px #2323233b;
+  }
+  .preview {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    padding-top: 15px;
+    position: fixed;
+    background-color: #000;
+    z-index: 10000;
+    overflow: scroll;
+  }
+  .preview-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  .preview-caption {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: unset;
+    overflow-wrap: break-word;
+  }
+
+  .text-bold {
+    font-weight: bold;
+    font-size: 0.75rem;
+
+    .text-caption {
+      font-size: 0.5rem;
+    }
+  }
+
+  .footer-sub {
+    text-align: right;
+    text-transform: none;
+    font-size: 00.75em;
+    font-weight: normal;
+    color: var(--ion-color-light);
+    opacity: 0.7;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .receive-message-datetime-text {
+    padding-right: 15px;
+    color: black;
+  }
+  .send-message-datetime-text {
+    color: white;
+    padding-right: 10px;
+    font-family: 'Roboto';
+  }
+
+  .message-container {
+    padding: 2px;
+  }
+
+  .focused-message-container {
+    --background: #eeeeee;
+  }
+
+  .selected-message-container {
+    --background: #bdbdbd;
+  }
+
+  .text-message-container {
+    padding: 5px 15px 5px 15px;
+  }
+  .sendMessageText {
+    font-size: 3.89294vw;
+    overflow-wrap: break-word;
+    color: white;
+  }
+  .receiveMessageText {
+    font-size: 3.89294vw;
+    overflow-wrap: break-word;
+    color: black;
+  }
+
+  .image-message-left-container {
+    --padding-start: 0px;
+    --inner-padding-end: 0px;
+  }
+  .image-message-container {
+    --padding-start: 0px;
+    --inner-padding-end: 0px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  .image-message {
+    width: 100%;
+    object-fit: contain !important;
+    margin: 0 auto;
+  }
+  .image-message-text {
+    padding: 5px 15px 5px 15px;
+    font-size: 3.89294vw;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+  }
+
+  .responseMessage {
+    --background: #04565a;
+    color: white !important;
+    margin-left: auto;
+    min-width: 160px;
+    max-width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 16px;
+  }
+
+  .senderMessage {
+    --background: #f8f8f8;
+    min-width: 160px;
+    max-width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 16px;
+  }
+
+  .user-name-container {
+    padding: 5px 15px 0px 15px;
+  }
+  .user-name-text {
+    color: #840c48;
+  }
+
+  .check-message {
+    font-size: 16px;
+    color: #64ae0f;
+    margin-left: 5px;
+  }
+
+  .pdf-message-container {
+    position: relative;
+    width: 100%;
+    background-color: grey;
+    border-radius: 16px;
+  }
+  .pdf-info-container {
+    width: 100%;
+  }
+  .pdf-info {
+    overflow-wrap: break-word;
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .pdf-title {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .pdf-download {
+    height: 16px;
+  }
+  .pdf-message-text {
+    padding: 5px 15px 5px 15px;
+    font-size: 3.89294vw;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+    background-color: #04565a;
+  }
+  .pdf-preview-container {
+    position: relative;
+  }
+  .pdf-preview {
+    background-color: white;
+    canvas {
+      height: 350px !important;
+    }
+  }
+}

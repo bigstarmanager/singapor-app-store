@@ -1,0 +1,42 @@
+ion-grid {
+  padding: 24px 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.modal-container {
+  --padding-start: 24px;
+  --padding-end: 24px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+.modal-title {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.modal-contents {
+  margin-top: 12px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  .bold-text {
+    font-weight: bold;
+  }
+}
+
+.confirmButton {
+  margin-top: 40px;
+  ion-button {
+    width: 100%;
+    height: 48px;
+    text-transform: capitalize;
+    font-weight: 500;
+    --border-radius: 4px;
+    &.button-disabled {
+      --background: #f4f6f8;
+      color: #a2acb5;
+    }
+  }
+}

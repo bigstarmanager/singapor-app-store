@@ -1,0 +1,22 @@
+.noslider {
+  display: flex;
+}
+
+:global(.swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical
+    > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite) {
+  width: 20%;
+  height: 4px;
+  left: 40%;
+  top: 90%;
+}
+
+.supplier-search-skeleton-slides {
+  padding-left: 3.865vw;
+  padding-bottom: 14px;
+}
+
+.supplier-search-skeleton-text {
+  margin-right: 8px;
+  line-height: 24px;
+  --border-radius: 20px;
+}

@@ -1,0 +1,100 @@
+.category_product_header {
+  background: #04565a;
+  padding: 0.8vw;
+  display: flex;
+  align-items: center;
+  ion-toolbar {
+    --border-width: 0;
+    display: flex;
+    align-items: center;
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+  ion-searchbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #ffffff;
+    border-radius: 6px;
+    height: 40px;
+    --background: #ffffff;
+    --placeholder-color: #a2acb5;
+    --icon-color: #a2acb5;
+    --clear-button-color: #04565a;
+    --border-radius: 6px;
+  }
+  ion-back-button {
+    padding-right: 3.865vw;
+    padding-left: 3.865vw;
+    color: #ffffff;
+    &::part(native) {
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      --min-width: 7.488vw;
+      --padding-start: 0;
+    }
+  }
+  ion-buttons {
+    align-self: auto;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    ion-button {
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      margin: 0;
+      --padding-end: 0;
+      --padding-start: 3.865vw;
+    }
+    ion-button:last-child {
+      --padding-end: 3.865vw;
+    }
+    ion-img {
+      width: 5.797vw;
+    }
+  }
+}
+.category-product {
+  .back-to-top {
+    z-index: 1000;
+    position: fixed;
+    top: -40px;
+    left: 36%;
+    padding: 10px;
+    background: #04565a;
+    border-radius: 20px;
+    font-size: 3.382vw;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  .back-to-top.show {
+    top: calc(115px + var(--ion-safe-area-top));
+    transition: all 0.5s ease-in-out;
+  }
+}
+:global(.category_product_header .searchbar-input-container .searchbar-input) {
+  padding-inline-start: 35px !important;
+  padding-inline-end: 0;
+  font-weight: 400;
+  font-size: 3.865vw;
+  line-height: 5.797vw;
+  box-shadow: none;
+}
+:global(.category_product_header .searchbar-input-container .searchbar-search-icon) {
+  left: 2.415vw;
+  top: 1.415vw;
+}
+:global(.category_product_header .searchbar-search-icon.sc-ion-searchbar-ios) {
+  top: 0;
+}
+.login-sticky {
+  height: 64px;
+  background: rgba(102, 113, 124, 0.9);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ion-label {
+    color: #ffffff;
+    font-size: 4.348vw;
+    line-height: 5.314vw;
+  }
+}

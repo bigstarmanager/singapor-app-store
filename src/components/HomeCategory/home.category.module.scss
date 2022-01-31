@@ -1,0 +1,133 @@
+.home-categories {
+  margin-top: 7.246vw;
+  .home-category-list {
+    padding: 0 3.865vw;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    align-items: center;
+    .category-item {
+      height: 100%;
+      margin-right: 2.415vw;
+      padding: 2.415vw;
+      font-weight: 500;
+      font-size: 3.623vw;
+      line-height: 3.623vw;
+      &.selected {
+        background: #04565a;
+        color: white;
+        border-radius: 20px;
+      }
+      .skeleton-category {
+        width: 12.077vw;
+        height: 6.039vw;
+        border-radius: 10px;
+      }
+    }
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4.831vw 2.415vw;
+    .product_item {
+      background: #ffffff;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+    }
+  }
+  .divider {
+    height: 2px;
+    background-color: #04565a;
+    margin: 7.246vw 10.145vw auto;
+  }
+  .browse-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 11.594vw;
+    color: #04565a;
+    font-size: 3.865vw;
+    line-height: 5.797vw;
+    justify-content: center;
+    font-weight: 500;
+    font-family: 'Roboto';
+    ion-img {
+      margin-left: 7px;
+      font-size: 4.348vw;
+    }
+  }
+  .skeleton_list {
+    padding: 0 3.865vw;
+    margin-top: 2.415vw;
+    .product_list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 4.831vw 2.415vw;
+    }
+    .skeleton_item {
+      padding: 0;
+    }
+    .wrapper {
+      overflow: hidden;
+      padding: 0px 6px 2.899vw;
+      border-radius: 6px;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      position: relative;
+      margin-bottom: 0.5rem;
+      .image {
+        margin-top: 5px;
+        width: 100%;
+        height: 38.647vw;
+        object-fit: cover;
+      }
+    }
+  }
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4.348vw;
+    line-height: 5.797vw;
+    span {
+      margin: 3.623vw 0 4.831vw;
+    }
+    .see_more {
+      font-size: 3.623vw;
+      color: #04565a;
+      font-weight: 500;
+    }
+  }
+  .home_category {
+    padding: 0 3.865vw;
+    padding-bottom: 6.28vw;
+  }
+}
+.sticky_home_category {
+  .home-category-list {
+    position: fixed;
+    top: calc(45px + var(--ion-safe-area-top));
+    z-index: 99;
+    background: white;
+    width: 100%;
+    padding-top: 4.831vw;
+    animation: headerAnimation 0.5s ease;
+  }
+  .noPadding {
+    // padding-top: 3.865vw;
+  }
+  ion-infinite-scroll-content {
+    min-height: 4px;
+  }
+}
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

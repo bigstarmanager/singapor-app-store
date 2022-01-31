@@ -1,0 +1,216 @@
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.header {
+  background: #04565a;
+  color: white;
+  font-family: 'Roboto';
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.appbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.backBtn {
+  margin-left: 2px;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.imageProfile {
+  height: 100px;
+  width: 100px;
+}
+
+.editIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.editImgProfile {
+  height: 60px;
+  widows: 60px;
+  border-radius: 30px;
+  margin-bottom: 6px;
+  margin-left: -24px;
+}
+
+.ionIcon {
+  color: #888888;
+  font-size: 18px;
+}
+
+.items-text {
+  font-size: 14px;
+  color: #000000;
+  margin-right: 12px;
+}
+
+.text-profile {
+  font-size: 14px;
+  color: #888888;
+  margin-right: 12px;
+}
+.addCardBtn {
+  background: #04565a;
+  color: #ffffff;
+  text-transform: none;
+  border-radius: 10px;
+  height: 42px;
+  margin: 16px;
+}
+
+.text-item {
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 12px;
+  text-transform: none;
+}
+
+.space {
+  width: 100%;
+  background: #f4f6f8;
+  color: grey;
+  font-size: 14px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+
+.warning-icon {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.space-top {
+  margin-top: 6px;
+}
+
+.hide-space {
+  width: 10px;
+}
+
+.space-bottom {
+  margin-bottom: 5vh;
+}
+
+.hide-text {
+  font-size: 14px;
+  color: transparent;
+}
+
+:global(.first-name-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  display: block;
+  height: 14.6rem;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  bottom: 0;
+}
+
+:global(.last-name-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  display: block;
+  height: 13.5rem;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  bottom: 0;
+}
+
+:global(.phone-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  height: 15.6rem;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  bottom: 0;
+}
+
+:global(.email-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  height: 19.4rem;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  bottom: 0;
+  z-index: 20;
+}
+
+:global(.gender-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  top: calc(100% - (39%));
+  height: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 20;
+}
+
+:global(.password-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  height: 20.2rem;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  bottom: 0;
+  z-index: 20;
+}
+
+:global(.language-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  top: calc(100% - (39%));
+  height: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 20;
+}
+
+:global(.add-card-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  height: 24.2rem;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  bottom: 0;
+}

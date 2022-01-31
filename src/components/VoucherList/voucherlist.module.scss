@@ -1,0 +1,64 @@
+ion-list {
+  .voucher-list {
+    margin: 15px 16px 7px 16px;
+    span {
+      display: block;
+      margin-bottom: 15px;
+    }
+    .voucher-block {
+      display: flex;
+      padding: 14px;
+      border: 1px solid #e1e4e6;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      h1 {
+        font-size: 1rem;
+        color: #fff;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background: url('/assets/images/rectangle.svg') no-repeat right center;
+      }
+      .voucher-info-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 16px;
+        .voucher-info {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 14px !important;
+            line-height: 20px;
+            margin: 0 0 2px 0;
+          }
+          span.bold {
+            font-weight: 700;
+          }
+          span.small {
+            font-size: 12px !important;
+            line-height: 14px;
+          }
+          span.error {
+            color: red;
+          }
+        }
+      }
+      ion-radio {
+        width: 30px;
+        height: 30px;
+        background: #e4e5e6;
+        border: 1px dashed #95989a;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+      ion-radio.radio-checked {
+        background-color: var(--color-checked);
+        border: 1px solid var(--color-checked);
+      }
+    }
+  }
+}

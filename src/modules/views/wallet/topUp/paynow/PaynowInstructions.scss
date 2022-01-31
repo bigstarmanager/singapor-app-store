@@ -1,0 +1,112 @@
+div.instructions {
+  background-color: $cart-disabled-button-color;
+  margin: 16px;
+  padding: 16px;
+
+  p.title {
+    color: #66717c;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+  }
+
+  div.instruction {
+    display: flex;
+    margin-bottom: 4px;
+    font-weight: 500;
+
+    > span::after {
+      content: '.';
+      margin-right: 8px;
+    }
+
+    span.theme-color {
+      color: $cart-button-color;
+    }
+  }
+}
+
+div.qr-code {
+  margin: 16px;
+  text-align: center;
+
+  p.title {
+    font-weight: 500;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  ion-img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+}
+
+form {
+  margin-top: 28px;
+  padding: 0 16px;
+
+  > div {
+    margin-bottom: 24px;
+
+    p.tip {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  }
+
+  ion-item.item-interactive-disabled {
+    // To allow clicking through the "Copy" element
+    pointer-events: all;
+    --ion-item-background: #{$cart-disabled-button-color};
+  }
+
+  div.label {
+    color: #66717c;
+    margin-bottom: 12px;
+  }
+}
+
+ion-item.voucher-container {
+  --min-height: 46px;
+  --highlight-height: 0;
+  border-radius: 4px;
+  border: 1px solid #e4e5e6;
+
+  div.amount {
+    opacity: 0.4;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    margin-right: 16px;
+    border-right: 1px solid #e4e5e6;
+  }
+
+  div.copy {
+    color: $cart-button-color;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &.error {
+    border: solid 1px #cb3c3c;
+  }
+
+  ion-input {
+    --height: 48px;
+  }
+}
+
+div.error {
+  color: #cb3c3c;
+}
+
+ion-footer {
+  // https://treedots.atlassian.net/browse/TREE-2386
+  &:before {
+    background-image: none;
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>434691670951-55tun5p0kjjt1e7ktu2dru4f1di659d5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.434691670951-55tun5p0kjjt1e7ktu2dru4f1di659d5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7f1yz6o2BfCcK6E94Xigd47lVkIZX7ZA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>434691670951</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.thetreedots.social</string>
+	<key>PROJECT_ID</key>
+	<string>treedots-25a33</string>
+	<key>STORAGE_BUCKET</key>
+	<string>treedots-25a33.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:434691670951:ios:432968c4d533ac4a632c82</string>
+	<key>DATABASE_URL</key>
+	<string>https://treedots-25a33.firebaseio.com</string>
+</dict>
+</plist>

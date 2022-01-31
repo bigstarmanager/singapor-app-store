@@ -1,0 +1,175 @@
+ion-item.supplier {
+  overflow: visible;
+
+  > div:last-child {
+    max-width: 50px;
+  }
+
+  ion-img.chevron {
+    height: 12px;
+  }
+
+  .supplier-btn {
+    span {
+      font-weight: bold;
+    }
+    ~ div {
+      position: relative;
+
+      .last-order {
+        width: 295px;
+        top: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 15px;
+        color: black;
+      }
+    }
+  }
+
+  .edit {
+    margin-right: -10px;
+  }
+
+  @media screen and (min-width: 700px) {
+    ion-img.chevron {
+      height: 16px;
+    }
+
+    .supplier-btn {
+      ~ div {
+        .last-order {
+          width: 400px;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    .edit {
+      margin-right: -6px;
+    }
+  }
+}
+
+.footnote {
+  margin-top: 10px;
+
+  ion-skeleton-text {
+    margin: 4px 0;
+  }
+
+  span {
+    display: block;
+    line-height: 20px;
+  }
+
+  .collection-date {
+    text-align: right;
+  }
+
+  @media screen and (min-width: 700px) {
+    .subtotal {
+      font-size: 1.2em;
+    }
+    .collection-date {
+      font-size: 1.2em;
+    }
+
+    span {
+      line-height: 2.5em;
+    }
+
+    span > strong {
+      font-size: 1.25em;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .supplier-name {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .edit {
+    font-size: 1.2em;
+  }
+
+  .spend-information {
+    font-size: 1.2em;
+  }
+
+  .subtotal2 {
+    font-size: 1.25em;
+  }
+}
+.progress-bar {
+  margin: 0 3.623vw;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  text-align: center;
+  .progress-back {
+    height: 6.763vw;
+    width: 100%;
+    background: #e4e4e4;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  .progress-text {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 3.865vw;
+    line-height: 3.382vw;
+    display: flex;
+  }
+  .back {
+    background: #04565a;
+    color: white;
+  }
+  .front {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e4e4e4;
+    color: #04565a;
+    transition: clip-path 4s linear;
+    border: 1px solid #e4e4e4;
+  }
+  .currency {
+    font-weight: 500;
+  }
+}
+.progress-bar.not-supported {
+  .back,
+  .front {
+    color: #a2acb5;
+  }
+  .back {
+    background: #a2acb5;
+  }
+}
+
+ion-item.information {
+  --ion-background-color: #f4fff0 !important;
+  --min-height: 70px;
+  font-size: 15px;
+  margin-bottom: 20px;
+
+  &.not-supported {
+    --ion-background-color: #fff2f0 !important;
+  }
+
+  ion-label {
+    line-height: 20px;
+  }
+}

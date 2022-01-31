@@ -1,0 +1,146 @@
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.padding-y {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.margin-y {
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.header {
+  background: #04565a;
+  height: calc(8.65rem + env(safe-area-inset-top));
+  color: white;
+  font-family: 'Roboto';
+}
+
+.appbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.sub-header {
+  height: 52px;
+}
+
+.text-name-black {
+  font-size: 18px;
+  padding-bottom: 4px;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.header-div {
+  background: #ffffff;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  color: #000000;
+  width: 92vw;
+  height: 42px;
+  border-radius: 4px;
+}
+
+.text-item {
+  font-size: 14px;
+  color: #888888;
+  margin-left: 12px;
+}
+
+.text-item-black {
+  font-size: 14px;
+  color: #000000;
+  text-transform: none;
+}
+
+.backBtn {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 24px;
+}
+
+.ionListIcon {
+  height: 24px;
+}
+
+.ionIcon {
+  color: #888888;
+  font-size: 18px;
+}
+
+.findOut {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.space {
+  width: 100%;
+  height: 32px;
+  background: #f4f6f8;
+  color: grey;
+  font-size: 14px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+
+.help-page {
+  background: #f4f6f8;
+  background-color: #f4f6f8;
+  height: 22rem;
+}
+
+.space-2 {
+  width: 100%;
+  height: 16px;
+  background: #f4f6f8;
+  color: grey;
+  font-size: 14px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+
+.support-container {
+  border: 1px solid #e1e4e6;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  .support-container-row {
+    display: flex;
+    align-items: center;
+
+    .support-item-title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+    }
+    .support-item-description {
+      font-size: 12px;
+      color: #888888;
+    }
+  }
+
+  .support-item-icon-container {
+    height: 60px;
+    width: 60px;
+    margin: 6px;
+    border-radius: 50%;
+    position: relative;
+
+    .support-item-icon {
+      position: absolute;
+      width: 20px;
+      top: 50%;
+      left: 50%;
+      margin: -10px 0 0 -10px;
+    }
+  }
+}

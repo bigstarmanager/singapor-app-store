@@ -1,0 +1,196 @@
+{
+  "project_info": {
+    "project_number": "434691670951",
+    "firebase_url": "https://treedots-25a33.firebaseio.com",
+    "project_id": "treedots-25a33",
+    "storage_bucket": "treedots-25a33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434691670951:android:0deb6d2557f7fc5c632c82",
+        "android_client_info": {
+          "package_name": "com.thetreedots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZSc0-zT_ubtoWpw23Zm_a6y1CSNTftw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "434691670951-42g4ppnisq1e20fgjm3fehd7np39kl33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thetreedots",
+                "app_store_id": "1448811993"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434691670951:android:9d0d350d41868da3632c82",
+        "android_client_info": {
+          "package_name": "com.thetreedots.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZSc0-zT_ubtoWpw23Zm_a6y1CSNTftw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "434691670951-42g4ppnisq1e20fgjm3fehd7np39kl33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thetreedots",
+                "app_store_id": "1448811993"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434691670951:android:c6fa19e60caf6d87632c82",
+        "android_client_info": {
+          "package_name": "com.thetreedots.business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZSc0-zT_ubtoWpw23Zm_a6y1CSNTftw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "434691670951-42g4ppnisq1e20fgjm3fehd7np39kl33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thetreedots",
+                "app_store_id": "1448811993"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434691670951:android:6d6f02e1203efbad632c82",
+        "android_client_info": {
+          "package_name": "com.thetreedots.sandbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZSc0-zT_ubtoWpw23Zm_a6y1CSNTftw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "434691670951-42g4ppnisq1e20fgjm3fehd7np39kl33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thetreedots",
+                "app_store_id": "1448811993"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434691670951:android:dc83e04af113c217632c82",
+        "android_client_info": {
+          "package_name": "com.thetreedots.social"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZSc0-zT_ubtoWpw23Zm_a6y1CSNTftw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434691670951-didqt4d07aimttaod6rjk6gcaavfjrru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "434691670951-42g4ppnisq1e20fgjm3fehd7np39kl33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thetreedots",
+                "app_store_id": "1448811993"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

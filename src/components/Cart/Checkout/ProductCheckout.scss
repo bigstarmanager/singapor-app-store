@@ -1,0 +1,84 @@
+ion-item.product {
+  --min-height: 95px;
+  --ion-item-background: #{$checkout-background-color};
+
+  ion-img {
+    height: 70px;
+    width: 70px;
+  }
+
+  ion-grid.product {
+    .delete-btn {
+      height: 100%;
+      --background: #{$cart-button-color};
+    }
+
+    &.description {
+      color: #000000;
+      padding: 10px 0 8px 16px;
+      height: 100%;
+
+      ion-row:first-child {
+        height: 100%;
+      }
+
+      .name div {
+        max-height: 1.2em;
+        overflow: hidden;
+        width: 100%;
+        // white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      div.pooling {
+        display: inline-block;
+        line-height: 0;
+        background-color: $cart-button-color;
+
+        padding: 6px;
+        height: 23px;
+
+        ion-img {
+          display: inline-block;
+          width: 13px;
+          height: 11px;
+        }
+
+        span {
+          margin-left: 3px;
+          line-height: 10px;
+          font-size: 12px;
+          color: white;
+          vertical-align: bottom;
+        }
+      }
+
+      .price,
+      .quantity {
+        color: #{$cart-button-color};
+      }
+
+      .price {
+        font-weight: bold;
+      }
+
+      @media screen and (min-width: 700px) {
+        .name div {
+          font-size: 1.25em;
+        }
+        .price {
+          font-size: 1.1em;
+        }
+        div.pooling {
+          display: inline-block;
+          span {
+            font-size: 1em;
+          }
+        }
+        .quantity {
+          font-size: 1.25em;
+        }
+      }
+    }
+  }
+}

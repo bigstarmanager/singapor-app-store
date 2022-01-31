@@ -1,0 +1,65 @@
+ion-grid {
+  padding: 24px 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.modal-container {
+  --padding-start: 24px;
+  --padding-end: 24px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+.modal-title {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.modal-contents {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.postal-code-text {
+  color: #66717c;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.postal-code-input {
+  margin-top: 12px;
+  border-style: solid;
+  border-color: #e4e5e6;
+  border-width: 1px;
+  border-radius: 4px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+}
+.postal-code-comment {
+  color: #a2acb5;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 16px;
+}
+
+.confirmButton {
+  margin-top: 40px;
+  ion-button {
+    width: 100%;
+    height: 48px;
+    text-transform: capitalize;
+    font-weight: 500;
+    --border-radius: 4px;
+    &.button-disabled {
+      --background: #f4f6f8;
+      color: #a2acb5;
+    }
+  }
+}

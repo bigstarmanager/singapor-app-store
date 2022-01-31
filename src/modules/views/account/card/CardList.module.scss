@@ -1,0 +1,113 @@
+.cc_image {
+  margin-right: 10px;
+  height: 24px;
+  width: auto;
+}
+
+.text-lable {
+  font-size: 14px;
+  color: #888888;
+}
+
+.chevronBtn {
+  font-size: 18px;
+  color: #888888;
+}
+
+form {
+  ion-label {
+    --color: rgba(136, 136, 136, 0.5) !important;
+  }
+
+  ion-input {
+    font-size: 12px;
+  }
+
+  ion-input.card {
+    background: url('/assets/images/generic.svg') no-repeat right center;
+    background-size: 24px !important;
+
+    &.visa {
+      background: url('/assets/images/cib-cc-visa.svg') no-repeat right center;
+    }
+
+    &.mastercard {
+      background: url('/assets/images/mastercard.svg') no-repeat right center;
+    }
+  }
+
+  ion-button.save {
+    text-transform: none;
+    margin: 0 20px;
+  }
+}
+
+div.header {
+  ion-item {
+    --min-height: 0px;
+
+    &:first-of-type {
+      --inner-padding-top: 12px;
+    }
+
+    ion-label {
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+
+img {
+  width: 24px;
+}
+
+ion-item.information {
+  --ion-background-color: #f4fff0 !important;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 0 12px;
+
+  > ion-label {
+    margin: 0 0 0 6px;
+    color: #888888;
+  }
+}
+
+.default-card-symbol {
+  background-color: #04565a;
+  text-align: center;
+  color: #ffffff;
+  font-size: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+.error {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cb3c3c;
+}
+
+:global(.edit-card-modal-dialog .modal-wrapper) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #ffffff;
+  padding: 16px;
+  top: calc(100% - (30%));
+  height: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

@@ -1,0 +1,120 @@
+.chatContainer {
+  .smallText {
+    font-size: 0.75rem;
+  }
+  .skeleton {
+    margin-bottom: 4.831vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .skeleton-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .skeleton-text {
+    flex: 1;
+    margin-left: 16px;
+  }
+  .no-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+
+    .no-search-icon {
+      width: 50%;
+    }
+    .no-search-text-container {
+      display: flex;
+      margin-top: 30px;
+    }
+    .join-collection-button {
+      --min-height: none;
+      --padding-start: 0px;
+      --inner-padding-end: 0px;
+      --border-style: none;
+    }
+    .no-search-text1 {
+      display: block;
+      color: #04565a;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+      text-align: center;
+      margin-right: 7px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+    .no-search-text2 {
+      display: block;
+      color: #66717c;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}
+
+.chat-item {
+  --padding-start: 0px;
+}
+
+.page-header {
+  ion-back-button {
+    color: #04565a;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .title-text {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+  }
+  ion-label {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    padding-left: 16px;
+  }
+  ion-searchbar {
+    --box-shadow: none;
+    --cancel-button-color: #04565a;
+    --clear-button-color: #04565a;
+  }
+  .search-icon {
+    font-size: 20px;
+    color: #04565a;
+  }
+}
+:global(ion-toast::part(message)) {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+:global(.muteToast) {
+  --background: rgba(102, 113, 124, 0.9);
+  --border-radius: 6px;
+  --color: #ffffff;
+  --button-color: #ffffff;
+}
+:global(.muteToast .toast-wrapper.toast-bottom .toast-content) {
+  padding: 16px 0 16px 22px;
+}
+:global(.muteToast .toast-wrapper.toast-bottom .toast-content .delete_img) {
+  margin-right: 10px;
+  width: 24px;
+}
+:global(.muteToast .toast-wrapper.toast-bottom .toast-content .delete_text) {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+:global(.toastMessage) {
+  --background: rgba(102, 113, 124, 0.9);
+  --color: white;
+}

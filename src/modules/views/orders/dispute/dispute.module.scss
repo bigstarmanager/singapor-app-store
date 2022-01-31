@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.category-container {
+  margin: 10px;
+}
+.category-button-deselect {
+  padding: 8px 10px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #c4c4c4;
+  margin-right: 10px;
+  font-family: 'Roboto';
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.category-button-selected {
+  padding: 8px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #04565a;
+  color: white;
+  font-family: 'Roboto';
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.order_overview_container {
+  .order-item {
+    --padding-start: 3.865vw;
+    --inner-padding-end: 3.865vw;
+  }
+  .empty-content {
+    display: grid;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    ion-img {
+      height: 48.309vw;
+      margin-bottom: 4.831vw;
+    }
+    ion-label {
+      text-align: center;
+      font-size: 3.382vw;
+      line-height: 4.831vw;
+      color: #66717c;
+      .browse {
+        font-weight: 500;
+        color: #04565a;
+      }
+    }
+  }
+}
+
+:global(.cancel-issue-confirm .alert-wrapper) {
+  background: white;
+  font-size: 14px;
+  color: #888888;
+  width: 80vw;
+  min-width: 80vw;
+
+  .alert-button {
+    color: red;
+  }
+}

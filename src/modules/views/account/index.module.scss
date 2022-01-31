@@ -1,0 +1,318 @@
+.padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.padding-y {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.top-header {
+  background: #04565a;
+  color: #ffffff;
+}
+
+.toolbar {
+  --border-color: #04565a;
+}
+
+.margin-x {
+  margin-right: 12px;
+}
+
+.margin-y {
+  margin-bottom: 4px;
+}
+
+.header-avatar {
+  background: #04565a;
+  color: white;
+  font-family: 'Roboto';
+  height: 152px;
+}
+.accountPageHeader {
+  background: #04565a;
+  padding: 0 3.865vw;
+  display: flex;
+  align-items: center;
+  ion-toolbar {
+    --border-width: 0;
+    display: flex;
+    align-items: center;
+    ion-row {
+      align-self: auto;
+    }
+  }
+  ion-buttons {
+    align-self: auto;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    ion-button {
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      margin: 0;
+      --padding-end: 0;
+      --padding-start: 3.865vw;
+    }
+    ion-img {
+      height: 5vw;
+    }
+  }
+  .headerTitle {
+    text-align: left;
+    padding-left: 0;
+    color: white;
+    font-size: 4.348vw;
+    font-weight: 500;
+    line-height: 4.348vw;
+  }
+}
+
+.appbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.subheader {
+  height: 76px;
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+  margin-right: 24px;
+}
+
+.order-badge {
+  background-color: #4ed164;
+  color: white;
+  font-size: 12px;
+  padding: 2px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 2rem;
+}
+.order-badge-2 {
+  background-color: #4ed164;
+  color: white;
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 5.2px;
+  padding-right: 5.2px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 2rem;
+}
+@media screen and (min-width: 700px) {
+  .order-badge {
+    height: 22px;
+    width: 22px;
+    min-width: 22px;
+  }
+}
+
+.order-badge-transparent {
+  background-color: transparent;
+  color: transparent;
+  font-size: 12px;
+  padding: 2px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.manageBtn {
+  background: white;
+  text-transform: none;
+  border-radius: 4px;
+  height: 42px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: -62px;
+}
+.treedotsIcon {
+  font-size: 22px;
+  margin-right: 3px;
+  margin-left: 2px;
+}
+.chatIcon {
+  color: #ffffff;
+  font-size: 24px;
+}
+.locationIcon {
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: 11px;
+}
+.ionIcon {
+  color: #888888;
+  font-size: 18px;
+}
+.toolbarMng {
+  background: transparent;
+}
+.image-icon {
+  max-height: 24px;
+  max-width: 24px;
+  margin-right: 9px;
+}
+.text-item {
+  color: #888888;
+  margin-left: 12px;
+}
+.menu-text {
+  font-size: 14px;
+}
+@media screen and (min-width: 700px) {
+  .menu-text {
+    font-size: 16px;
+  }
+}
+.submenu-text {
+  font-size: 12px;
+}
+@media screen and (min-width: 700px) {
+  .submenu-text {
+    font-size: 14px;
+  }
+}
+.my-order {
+  color: #888888;
+  text-align: center;
+}
+
+.my-order-icon {
+  height: 28px;
+  width: 28px;
+  margin-bottom: 15px;
+}
+
+.space {
+  width: 100%;
+  background: #f4f6f8;
+  color: grey;
+  font-size: 14px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+
+.space-top {
+  width: 100%;
+  background: #f4f6f8;
+  height: 40px;
+  margin-top: 36.5px;
+}
+
+.space-line {
+  height: 2px;
+  width: 100%;
+  background: #f4f6f8;
+}
+
+.e-wallet-space {
+  height: 16px;
+  width: 100%;
+  background: #f4f6f8;
+}
+
+.treedotspay {
+  font-size: 14px;
+  margin-top: 13px;
+  margin-bottom: 4px;
+}
+
+.e-wallet-balance {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.e-wallet-load {
+  width: 15vw;
+  height: 16px;
+  margin-left: 6vw;
+  border-radius: 4px;
+}
+
+.e-wallet {
+  text-align: center;
+  align-items: center;
+}
+
+.e-wallet-btn {
+  text-transform: none;
+  height: 32px;
+  margin-left: -12px;
+}
+
+.topup-btn {
+  text-transform: none;
+  height: 32px;
+  margin-right: -12px;
+}
+
+.logout {
+  color: #cb3c3c;
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+:global(.logout-confirm .alert-wrapper) {
+  background: white;
+  font-size: 14px;
+  color: #888888;
+  width: 80vw;
+  min-width: 80vw;
+}
+
+.version {
+  text-align: center;
+}
+
+.bottom-space {
+  height: 4vh;
+}
+.chace {
+  font-weight: 700;
+  text-align: center;
+  color: #04565a;
+  width: 40vw;
+  text-transform: none;
+  margin-top: 12px;
+}
+
+.column-center {
+  columns: unset;
+  align-content: center;
+  align-items: center;
+}
+
+.my-custom-class {
+  background: #e5e5e5;
+  width: 90vw;
+}
+:global(.success-toast) {
+  color: #ffffff;
+  text-align: left;
+  padding: 4px;
+  border-radius: 6px;
+  --background: rgba(102, 113, 124, 0.9);
+}
+
+.chat-lock {
+  font-size: 20px;
+}
+
+.refunds-icon {
+  height: 14px;
+  margin-bottom: -1px;
+  margin-right: -32px;
+}

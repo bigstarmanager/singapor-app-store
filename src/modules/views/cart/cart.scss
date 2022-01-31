@@ -1,0 +1,353 @@
+@import '@/styles/variables';
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  // font-family: Roboto;
+  // --ion-font-family: Roboto, 'Helvetica Neue', sans-serif;
+  --ion-font-family: Roboto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+ion-skeleton-text {
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+.m-l-5 {
+  margin-left: 5px !important;
+}
+
+.m-b-20 {
+  margin-bottom: 20px !important;
+}
+
+.m-b-22 {
+  margin-bottom: 22px !important;
+}
+
+.f-s-14 {
+  font-size: 14px !important;
+}
+
+.f-s-18 {
+  font-size: 18px !important;
+}
+
+.n-m-h {
+  --min-height: 0px !important;
+}
+
+.wh20 {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+ion-footer.checkout-footer {
+  height: 180px;
+
+  ion-toolbar {
+    height: 100%;
+
+    > *:first-child {
+      margin-top: 20px;
+    }
+  }
+  .voucher-code-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    .voucher-code {
+      display: flex;
+      align-items: center;
+      ion-icon {
+        margin-left: 2px;
+        font-size: 22px;
+      }
+    }
+    .voucher-discount {
+      display: flex;
+      align-items: center;
+      min-height: 34px;
+      color: unset;
+      ion-img {
+        margin-left: 10px !important;
+        width: 15px !important;
+        height: 15px !important;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .order-total {
+    strong {
+      color: $cart-button-color;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    height: 200px;
+
+    .voucher-discount {
+      font-size: 1.5em;
+    }
+
+    .order-total {
+      padding-top: 0.25em;
+      font-size: 1.25em;
+      strong {
+        font-size: 1.5em;
+      }
+    }
+
+    .text-theme-color {
+      strong {
+        font-size: 1.25em;
+      }
+    }
+  }
+}
+
+ion-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+ion-skeleton-text.img,
+ion-img {
+  width: 24px;
+  height: 24px;
+}
+
+ion-item.no-padding {
+  --inner-padding-end: 0px;
+}
+
+// Img beside text. For example, pencil icon on the right of card number in checkout page.
+ion-label,
+span {
+  ~ ion-img {
+    margin: 0 0 0 6px;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+  }
+
+  ion-img {
+    margin: 0 0 0 6px;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+  }
+}
+
+// Text beside checkbox/img. For example, supplier btn beside checkbox.
+ion-skeleton-text.checkbox,
+ion-skeleton-text.img,
+ion-checkbox,
+ion-img {
+  ~ ion-label {
+    margin: $margin-between-icons;
+  }
+  ~ ion-label.margin-between-icons-2 {
+    margin: $margin-between-icons-2;
+  }
+  ~ ion-label.margin-between-icons-3 {
+    margin: $margin-between-icons-3;
+  }
+  ~ span {
+    margin: $margin-between-icons;
+  }
+  ~ span.margin-between-icons-2 {
+    margin: $margin-between-icons-2;
+  }
+  ~ span.margin-between-icons-3 {
+    margin: $margin-between-icons-3;
+  }
+}
+
+ion-skeleton-text.checkbox {
+  ~ div {
+    width: 100%;
+  }
+}
+
+ion-skeleton-text.checkbox,
+ion-checkbox {
+  + div {
+    margin: $margin-between-icons;
+  }
+}
+
+ion-skeleton-text.checkbox,
+ion-checkbox {
+  width: 20px;
+  height: 20px;
+  --background-checked: #{$cart-button-color};
+  --border-color-checked: #{$cart-button-color};
+}
+
+ion-spinner.replace-button {
+  width: 100%;
+  text-align: center;
+  // 44px because (button height - font size) / 2
+  margin-top: 44px;
+}
+
+ion-button {
+  span {
+    text-transform: none;
+    letter-spacing: normal;
+
+    &.select-collection-point {
+      font-size: 1rem;
+      color: #707070 !important;
+    }
+
+    &.select-collection-point.selected {
+      color: #000 !important;
+    }
+
+    &.edit {
+      color: #707070 !important;
+    }
+  }
+
+  &.checkout-btn {
+    text-transform: none;
+    margin: 28px 16px 12px 16px;
+    height: 48px;
+    font-size: 16px;
+    --background: #{$cart-button-color};
+    --box-shadow: 0;
+  }
+
+  &.try-back-btn {
+    text-transform: none;
+    margin: 16px 16px 12px 16px;
+    height: 48px;
+  }
+
+  &.checkout-btn[disabled] {
+    --background: #{$cart-disabled-button-color};
+
+    span {
+      color: black;
+    }
+  }
+
+  &.checkout-btn[fill='outline'] {
+    --border-width: 1px;
+    --background: transparent;
+    color: $cart-button-color !important;
+  }
+  @media screen and (min-width: 700px) {
+  }
+}
+.available-vouchers {
+  background-color: #64ae0f;
+  padding: 4px 8px;
+  border-radius: 40px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  margin-left: 10px;
+}
+@media screen and (min-width: 700px) {
+  ion-button {
+    span {
+      &.select-collection-point {
+        font-size: 1.25rem;
+      }
+    }
+
+    &.checkout-btn {
+      height: 60px;
+      margin: 28px 16px 12px 16px;
+      span {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .f-s-14 {
+    font-size: 16px !important;
+  }
+  .f-s-16 {
+    font-size: 18px !important;
+  }
+  .available-vouchers {
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+  }
+}
+
+.text-theme-color {
+  color: $cart-button-color;
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+div.line-separator {
+  height: 10px;
+  margin: 5px 0 0;
+  background-color: #f8fbff;
+}
+
+div.line-separator-2 {
+  height: 2px;
+  background-image: url('/assets/images/line.jpg');
+  // background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='10%2c 35' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+div.line-separator-3 {
+  height: 1px;
+  background-color: #f0f0f0;
+  margin: 0 16px;
+}
+
+div.empty-cart {
+  width: 100%;
+  // 79 is the height of ion-list.
+  height: calc(100% - 79px);
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  p {
+    width: 100vw;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 0 16px;
+    color: #66717c;
+
+    strong {
+      color: $cart-button-color;
+    }
+  }
+
+  ion-img {
+    height: 200px;
+    width: 200px;
+  }
+}
